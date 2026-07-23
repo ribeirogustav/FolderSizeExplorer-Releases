@@ -5,7 +5,7 @@
 | Assunto | Canal |
 | --- | --- |
 | Dúvidas, erros e uso do produto | `support@grcx.com.br` |
-| Issues não sensíveis | Planejado em <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/issues>; indisponível até o repositório receber o primeiro commit |
+| Issues não sensíveis | <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/issues> |
 | Privacidade e assuntos legais | `contact@grcx.com.br` |
 | Vulnerabilidades | `gustavo@grcx.com.br` |
 | Doações e identificação de pagamento | `billing@grcx.com.br` |

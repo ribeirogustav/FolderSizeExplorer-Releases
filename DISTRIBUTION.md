@@ -234,7 +234,7 @@ Não reutilizar uma tag ou versão para binário diferente.
 Configuração recomendada:
 
 - descrição: `Official releases of Folder Size Explorer for Windows x64`;
-- issues habilitadas para bugs não sensíveis depois do primeiro commit; até lá, usar `support@grcx.com.br`;
+- issues habilitadas para bugs não sensíveis, com vulnerabilidades direcionadas ao e-mail privado;
 - wiki e projects desabilitados se não forem utilizados;
 - README público com downloads e licença proprietária;
 - links para `SUPPORT.md`, `SECURITY.md` e `PRIVACY.md`;

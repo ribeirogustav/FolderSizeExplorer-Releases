@@ -57,7 +57,7 @@ Consulte `PRIVACY.md` no pacote/repositório da release.
 - Segurança: `gustavo@grcx.com.br`
 - Doações: `billing@grcx.com.br`
 
-Issues públicas para bugs não sensíveis ficarão disponíveis depois da inicialização deste repositório.
+Issues públicas para bugs não sensíveis: <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/issues>.
 
 ## Licença
 

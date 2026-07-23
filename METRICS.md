@@ -128,10 +128,10 @@ doacoes_por_1000_downloads = quantidade_doacoes / downloads_assets * 1000
 
 | Métrica | Valor factual | Limitação |
 | --- | --- | --- |
-| Repositório público de releases | Criado e público | Ainda vazio |
+| Repositório público de releases | Criado, público e inicializado com documentação | Ainda sem release/binário |
 | Releases públicas | 0 | A versão `1.0.0` ainda não foi publicada oficialmente |
 | Assets/downloads oficiais | 0 | Não há asset disponível |
-| Issues públicas | 0 | O repositório vazio ainda não aceita criação de issues até ser inicializado |
+| Issues públicas | 0 | Canal inicializado, ainda sem histórico |
 | Usuários/instalações | Não mensurável | Sem telemetria, conta ou release oficial |
 | Retenção | Não mensurável | Exige pesquisa voluntária ou metodologia futura |
 | Doações | Dados não fornecidos para esta baseline | Consultar painéis dos provedores de forma privada |
@@ -141,7 +141,7 @@ doacoes_por_1000_downloads = quantidade_doacoes / downloads_assets * 1000
 | Métrica | Fonte | Periodicidade | Responsável | Pública? |
 | --- | --- | --- | --- | --- |
 | Downloads por release/asset | GitHub | Mensal | GRCX | Pode ser agregada |
-| Issues abertas/fechadas | GitHub | Mensal | GRCX | Pública depois que o repositório for inicializado |
+| Issues abertas/fechadas | GitHub | Mensal | GRCX | Pública no repositório de releases |
 | Solicitações por categoria | E-mail/issues | Mensal | GRCX | Apenas agregado |
 | Mediana de primeira resposta | E-mail/issues | Mensal | GRCX | Opcional e agregada |
 | Bugs confirmados por versão | Suporte/triagem | Mensal | GRCX | Agregado |
