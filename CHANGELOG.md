@@ -18,7 +18,7 @@ O formato segue os princípios de [Keep a Changelog](https://keepachangelog.com/
 
 - Documentados bloqueadores conhecidos para a primeira release oficial: validação FTPS, FTP simples, dependência SQLite vulnerável, reparse points em transferências, rename, CSV formula injection e assinatura de código.
 
-## [1.0.0] - Data de publicação oficial pendente
+## [1.0.0] - 2026-07-30
 
 ### Implementado no código auditado
 
@@ -34,5 +34,6 @@ O formato segue os princípios de [Keep a Changelog](https://keepachangelog.com/
 
 ### Limitações relevantes
 
-- A versão `1.0.0` existe nos metadados e builds locais, mas ainda não há release pública oficial validada no repositório de releases.
-- Consulte `SECURITY.md` e `DISTRIBUTION.md` antes da publicação.
+- O executável portable para Windows x64 não possui assinatura digital e pode acionar um aviso do Windows SmartScreen.
+- FTP/FTPS está limitado a navegação e listagem; operações remotas ainda não estão disponíveis.
+- Consulte `SECURITY.md` e `DISTRIBUTION.md` para os riscos e requisitos de distribuição conhecidos.

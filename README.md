@@ -1,70 +1,67 @@
 # Folder Size Explorer
 
-Folder Size Explorer é um aplicativo desktop proprietário para Windows x64 que combina navegação de arquivos com cálculo recursivo do tamanho de pastas, treemap, abas e múltiplos modos de visualização.
+**English** | [Português (Brasil)](README.pt-BR.md)
 
-Este documento é destinado ao repositório público de releases. O código-fonte é privado e não é distribuído neste repositório.
+Folder Size Explorer is a proprietary Windows x64 desktop application that combines file browsing and management with recursive folder-size analysis.
 
-## Status
+This repository is the official public distribution channel. The source code is private and is not distributed here.
 
-A primeira release pública oficial ainda não foi publicada. Não baixe builds `OLD`, Debug ou executáveis obtidos em mirrors.
+<p align="center">
+  <img src="assets/folder-size-explorer.webp" alt="Folder Size Explorer showing column view and the size map" width="100%">
+</p>
 
-## Downloads oficiais
+## Download
 
-- GitHub Releases: <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases>
-- Site GRCX: <https://www.grcx.com.br/>
+- [Download the latest release](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
+- Current version: `1.0.0`
+- Asset: `FolderSizeExplorer-1.0.0-win-x64.exe`
+- Target: Windows 10/11 x64
 
-Cada release pública, inclusive pré-release, deve incluir um ZIP versionado, checksum SHA-256, assinatura Authenticode válida e documentação legal.
+The portable executable is self-contained and does not require a separate .NET installation.
 
-## Plataforma
+## Installation
 
-- Windows 10/11 x64 como alvo declarado.
-- Executável self-contained; não requer instalação separada do .NET.
-- Execução como usuário atual, sem solicitação automática de administrador.
+1. Download `FolderSizeExplorer-1.0.0-win-x64.exe` from the official release page.
+2. Optionally verify its SHA-256 checksum against the checksum published with the release.
+3. Move the executable to a local folder and run it.
 
-A compatibilidade por edição/build do Windows deve ser consultada nas notas da release correspondente.
+The application runs as the current user and does not automatically request administrator privileges. The current executable is not digitally signed, so Windows SmartScreen may display a warning.
 
-## Principais recursos
+## Features
 
-- cálculo assíncrono de tamanho de pastas;
-- cache local em memória e SQLite;
-- visualizações Detalhes, Colunas, Grade e Painel duplo;
-- treemap dos maiores itens visíveis;
-- abas, favoritos e caminhos recentes;
-- busca por nome na pasta atual e em subpastas;
-- operações locais de arquivos e drag-and-drop;
-- exportação CSV/JSON e comparação de tamanho;
-- interface em 21 culturas; e
-- navegação FTP/FTPS somente para listagem.
+- Asynchronous recursive folder-size calculation
+- In-memory and SQLite size cache
+- Details, Columns, Grid, and Dual-pane views
+- Visual size map for the largest visible items
+- Tabs, favorites, and recent locations
+- Local and recursive filename search
+- Local file operations and drag-and-drop
+- CSV/JSON export and size comparison
+- Interface available in 21 locales
+- FTP/FTPS browsing for remote listings
 
-Consulte as notas da release para limitações e riscos corrigidos/pendentes.
+FTP support is currently limited to browsing and listing. Remote download, upload, rename, and delete operations are not available.
 
-## Segurança importante
+## Privacy and Security
 
-Não será considerada oficial uma release pública sem os gates de segurança e integridade definidos pela GRCX.
+The application does not include telemetry. Settings, history, cache data, and FTP profiles are stored in the local Windows user profile. See [PRIVACY.md](PRIVACY.md) for details.
 
-Reporte vulnerabilidades em privado para `gustavo@grcx.com.br`. Não publique credenciais ou provas de conceito destrutivas em issues.
+Report security vulnerabilities privately to `gustavo@grcx.com.br`. Do not publish credentials or destructive proof-of-concept material in public issues. See [SECURITY.md](SECURITY.md).
 
-## Privacidade
+## Support
 
-A versão atual não implementa telemetria no executável. Configurações, histórico, cache e perfis FTP são armazenados no perfil local do Windows. Recursos de rede e provedores externos seguem as políticas dos respectivos serviços.
+- Public, non-sensitive bug reports: [GitHub Issues](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/issues)
+- Support: `support@grcx.com.br`
+- Privacy and legal: `contact@grcx.com.br`
+- Security: `gustavo@grcx.com.br`
+- Website: <https://www.grcx.com.br/>
 
-Consulte `PRIVACY.md` no pacote/repositório da release.
+See [SUPPORT.md](SUPPORT.md) for the support policy.
 
-## Suporte
+## License
 
-- Suporte: `support@grcx.com.br`
-- Privacidade e assuntos legais: `contact@grcx.com.br`
-- Segurança: `gustavo@grcx.com.br`
-- Doações: `billing@grcx.com.br`
+Copyright (c) 2026 Gustavo Ribeiro de Carvalho, operating under the GRCX brand. All rights reserved.
 
-Issues públicas para bugs não sensíveis: <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/issues>.
+Folder Size Explorer is proprietary freeware. Personal and internal business use is permitted. Public or third-party redistribution, mirrors, modification, and reverse engineering are not permitted without written authorization.
 
-## Licença
-
-Copyright © 2026 Gustavo Ribeiro de Carvalho, atuando sob a marca GRCX. Todos os direitos reservados.
-
-O aplicativo é freeware proprietário. A licença permite uso pessoal e empresarial interno e a implantação dentro da mesma organização. Redistribuição pública ou a terceiros, mirrors, modificação e engenharia reversa não são autorizados sem permissão escrita.
-
-Consulte `LICENSE` e `EULA.md` no pacote/repositório da release.
-
-Doações são opcionais e não ampliam direitos de licença.
+See [LICENSE](LICENSE) and [EULA.md](EULA.md) for the complete terms.
