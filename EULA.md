@@ -1,114 +1,116 @@
-# Contrato de Licença de Usuário Final (EULA)
+# End User License Agreement (EULA)
 
 **Folder Size Explorer**  
-**Versão do EULA:** 1.0  
-**Vigência:** 23 de julho de 2026
+**EULA version:** 1.0  
+**Effective date:** July 23, 2026
 
-Este Contrato de Licença de Usuário Final é celebrado entre o usuário e **Gustavo Ribeiro de Carvalho, pessoa física no Brasil que atua sob a marca GRCX**, titular do Folder Size Explorer.
+This End User License Agreement is entered into between the user and **Gustavo Ribeiro de Carvalho, an individual in Brazil doing business under the GRCX brand**, owner of Folder Size Explorer.
 
-Estes termos acompanham o canal oficial de download e o pacote do aplicativo. A versão atual não possui tela de aceite dentro do executável. Ao usar o aplicativo depois de ter acesso a estes termos, o usuário concorda com a licença na extensão permitida pela legislação. Caso não concorde, não deve usar o aplicativo.
+These terms accompany the official download channel and the application package. The current version does not show an in-app acceptance screen. By using the application after having access to these terms, the user agrees to the license to the extent permitted by law. If the user does not agree, they must not use the application.
 
-## 1. Natureza do produto
+## 1. Nature of the product
 
-Folder Size Explorer é um aplicativo desktop para Windows destinado à navegação de arquivos, cálculo de tamanhos de pastas, visualização de uso de disco e operações locais de arquivos.
+Folder Size Explorer is a Windows desktop application for file browsing, recursive folder-size calculation, disk-usage visualization, local file operations, and optional FTP/FTPS access.
 
-O aplicativo é disponibilizado como freeware proprietário. Gratuidade de uso não significa código aberto nem autorização de cópia ou redistribuição pública, modificação ou entrega a terceiros. As cópias estritamente necessárias ao uso e à implantação interna autorizados na seção 2 permanecem permitidas.
+The application is provided as proprietary freeware. Free use does not mean open source and does not authorize public copying or redistribution, modification, or delivery to third parties. Copies strictly necessary for the authorized use and internal deployment described in section 2 remain permitted.
 
-## 2. Licença concedida
+## 2. License grant
 
-A GRCX concede uma licença limitada, não exclusiva, intransferível e gratuita para executar cópias inalteradas do aplicativo:
+GRCX grants a limited, non-exclusive, non-transferable, royalty-free license to run unmodified copies of the application:
 
-- em uso pessoal; ou
-- em uso interno de empresa ou organização, em dispositivos sob seu controle.
+- for personal use; or
+- for internal use by a company or organization, on devices under its control.
 
-Empresas podem realizar implantação interna exclusivamente para seus próprios usuários e dispositivos. Não é permitido incluir o aplicativo em serviços, equipamentos, pacotes, mídias, downloads ou entregas destinados a clientes ou terceiros.
+Organizations may deploy internally only for their own users and devices. The application may not be included in services, equipment, packages, media, downloads, or deliveries intended for customers or other third parties.
 
-## 3. Cópia de segurança
+## 3. Backup copy
 
-É permitida uma cópia de segurança do instalador, pacote ou executável obtido por canal oficial, desde que permaneça sob controle do mesmo usuário ou organização e mantenha os avisos de licença.
+One backup copy of the installer, package, or executable obtained from an official channel is permitted, provided it remains under the control of the same user or organization and retains the license notices.
 
-## 4. Condutas proibidas
+## 4. Prohibited conduct
 
-Sem autorização escrita da GRCX, o usuário não pode:
+Without written authorization from GRCX, the user may not:
 
-- redistribuir a terceiros, publicar, espelhar, sublicenciar, vender, alugar ou emprestar o aplicativo, ressalvada a implantação interna permitida na seção 2;
-- disponibilizar o executável em sites, repositórios, redes de distribuição, lojas ou pacotes de terceiros;
-- modificar, adaptar, traduzir ou criar obra derivada;
-- descompilar, desmontar ou realizar engenharia reversa, salvo direito obrigatório previsto em lei;
-- remover ou ocultar créditos, marcas, avisos de licença ou informações de titularidade;
-- usar o aplicativo ou seus ativos para representar uma versão não oficial como autêntica;
-- usar logos, QR codes, endereços de doação ou identidade visual fora do contexto autorizado; ou
-- contornar proteções técnicas ou mecanismos de atualização/autenticidade que venham a existir.
+- redistribute to third parties, publish, mirror, sublicense, sell, rent, or lend the application, except for the internal deployment allowed in section 2;
+- make the executable available on third-party websites, repositories, distribution networks, stores, or packages;
+- modify, adapt, translate, or create derivative works;
+- decompile, disassemble, or reverse engineer, except to the extent such a right cannot be limited by applicable law;
+- remove or conceal credits, trademarks, license notices, or ownership information;
+- use the application or its assets to present an unofficial version as authentic;
+- use logos, QR codes, donation addresses, or brand identity outside the authorized context; or
+- bypass technical protections or any update/authenticity mechanisms that may exist.
 
-## 5. Operações de arquivos e responsabilidade do usuário
+## 5. File operations and user responsibility
 
-O aplicativo pode copiar, mover, renomear, abrir e enviar arquivos ou pastas à Lixeira. O usuário é responsável por:
+The application may copy, move, rename, open, and send files or folders to the Recycle Bin. The user is responsible for:
 
-- conferir origem, destino e seleção antes de confirmar operações;
-- manter backups adequados;
-- respeitar permissões e políticas de sua organização;
-- não operar arquivos críticos sem possibilidade de recuperação; e
-- avaliar resultados parciais causados por permissões, links, dispositivos ou falhas de rede.
+- checking source, destination, and selection before confirming operations;
+- maintaining adequate backups;
+- respecting permissions and organizational policies;
+- not operating on critical files without a recovery path; and
+- evaluating partial results caused by permissions, links, devices, or network failures.
 
-## 6. Recursos de rede e FTP
+## 6. Network features and FTP
 
-Conexões FTP/FTPS dependem de servidores e credenciais fornecidos pelo usuário. O usuário é responsável por ter autorização para acessar esses servidores.
+FTP/FTPS connections depend on servers and credentials supplied by the user. The user is responsible for having authorization to access those servers.
 
-FTP sem criptografia pode expor credenciais e dados. Use recursos de rede apenas após avaliar a configuração e os riscos documentados na versão instalada.
+Plain FTP may expose credentials and data without encryption. Use network features only after reviewing the configuration and the risks documented for the installed version.
 
-## 7. Dados e privacidade
+Automatic security may try FTPS first and fall back to plain FTP if the secure connection fails. Prefer FTPS or trusted local networks when using plain FTP.
 
-O tratamento de dados é descrito em [`PRIVACY.md`](PRIVACY.md). A versão atual não implementa telemetria de uso. Configurações, histórico, cache e perfis FTP são armazenados localmente no perfil do Windows.
+## 7. Data and privacy
 
-Ao contatar suporte ou usar provedores externos de doação, o usuário passa a se relacionar também com os sistemas e políticas desses canais.
+Data handling is described in [`PRIVACY.md`](PRIVACY.md). The current version does not implement usage telemetry. Settings, history, cache, and FTP profiles are stored locally in the Windows user profile.
 
-## 8. Apoio opcional
+When contacting support or using external donation providers, the user also becomes subject to those channels’ systems and policies.
 
-Doações são voluntárias. Uma doação:
+## 8. Optional support
 
-- não é requisito para o uso autorizado;
-- não compra o aplicativo;
-- não cria assinatura;
-- não transfere propriedade intelectual;
-- não amplia direitos de modificação ou distribuição; e
-- não garante implementação de recurso, prazo ou nível de suporte.
+Donations are voluntary. A donation:
 
-## 9. Atualizações
+- is not required for authorized use;
+- does not purchase the application;
+- does not create a subscription;
+- does not transfer intellectual property;
+- does not expand modification or distribution rights; and
+- does not guarantee feature delivery, timelines, or support levels.
 
-A versão atual não possui atualização automática. O usuário deve verificar manualmente os canais oficiais e validar versão, origem e checksum quando disponibilizado.
+## 9. Updates
 
-A GRCX pode corrigir, alterar, substituir ou descontinuar versões sem obrigação de manter compatibilidade indefinida. Atualizações podem conter termos revisados, apresentados antes ou junto à distribuição.
+The current version has no automatic updater. The user should manually check official channels and validate version, origin, and checksum when provided.
 
-## 10. Componentes de terceiros
+GRCX may fix, change, replace, or discontinue versions without an obligation to maintain indefinite compatibility. Updates may include revised terms presented before or with distribution.
 
-Bibliotecas, runtimes e outros componentes de terceiros seguem suas próprias licenças. Os avisos de terceiros acompanham o pacote oficial quando aplicáveis. Este EULA não reduz direitos concedidos diretamente por essas licenças.
+## 10. Third-party components
 
-## 11. Ausência de garantia
+Libraries, runtimes, and other third-party components remain under their own licenses. Third-party notices accompany the official package when applicable. This EULA does not reduce rights granted directly by those licenses.
 
-Na máxima extensão permitida pela legislação, o aplicativo é fornecido **“no estado em que se encontra”** e **“conforme disponível”**, sem garantia de funcionamento ininterrupto, ausência de erros, adequação a finalidade específica, compatibilidade futura ou recuperação de dados.
+## 11. Disclaimer of warranty
 
-Nenhuma informação de suporte constitui garantia adicional, salvo declaração escrita e expressa da GRCX.
+To the maximum extent permitted by law, the application is provided **“as is”** and **“as available”**, without warranty of uninterrupted operation, freedom from errors, fitness for a particular purpose, future compatibility, or data recovery.
 
-## 12. Limitação de responsabilidade
+No support information constitutes an additional warranty unless expressly stated in writing by GRCX.
 
-Na máxima extensão permitida pela legislação, a GRCX e o autor não respondem por danos indiretos, perda de dados, perda de receita, interrupção de atividade, falha de backup, indisponibilidade de servidor ou consequências de operações confirmadas pelo usuário.
+## 12. Limitation of liability
 
-Esta cláusula não exclui responsabilidade ou direitos que não possam ser afastados pela legislação aplicável.
+To the maximum extent permitted by law, GRCX and the author are not liable for indirect damages, data loss, lost revenue, business interruption, backup failure, server unavailability, or consequences of operations confirmed by the user.
 
-## 13. Encerramento
+This clause does not exclude liability or rights that cannot be waived under applicable law.
 
-O direito de uso termina automaticamente se o usuário violar estes termos. Nessa situação, deve cessar o uso e excluir as cópias sob seu controle. Cláusulas de titularidade, restrições, responsabilidade e legislação permanecem aplicáveis quando cabível.
+## 13. Termination
 
-## 14. Legislação aplicável
+The right to use ends automatically if the user violates these terms. In that case, the user must stop using the application and delete copies under their control. Ownership, restriction, liability, and governing-law clauses continue to apply where appropriate.
 
-Este EULA é regido pelas leis da República Federativa do Brasil, sem afastar direitos obrigatórios aplicáveis ao usuário em sua jurisdição.
+## 14. Governing law
 
-## 15. Canais oficiais e contato
+This EULA is governed by the laws of the Federative Republic of Brazil, without prejudice to mandatory rights applicable to the user in their jurisdiction.
+
+## 15. Official channels and contact
 
 - Releases: <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases>
-- Site: <https://www.grcx.com.br/>
-- Questões legais e privacidade: `contact@grcx.com.br`
-- Suporte: `support@grcx.com.br`
-- Segurança: `gustavo@grcx.com.br`
+- Website: <https://www.grcx.com.br/>
+- Legal and privacy: `contact@grcx.com.br`
+- Support: `support@grcx.com.br`
+- Security: `gustavo@grcx.com.br`
 
-O arquivo [`LICENSE`](LICENSE) integra este EULA.
+The [`LICENSE`](LICENSE) file is part of this EULA.
