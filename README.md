@@ -65,6 +65,26 @@ The application runs as the current user and does not automatically request admi
 
 See [CHANGELOG.md](CHANGELOG.md) for the full list.
 
+## Architecture
+
+The WPF interface talks to a central coordinator that uses dedicated services for the filesystem, folder-size calculation, file transfers, optional FTP/FTPS, and local settings. Size results can be cached locally in SQLite on your PC.
+
+```mermaid
+flowchart TD
+    User[Mouse, keyboard, drag-and-drop, or gamepad] --> UI[WPF interface]
+    UI --> Core[App coordinator]
+    Core --> FS[Filesystem service]
+    Core --> Size[Folder-size calculation]
+    Core --> Transfer[File transfers]
+    Core --> FTP[FTP/FTPS service]
+    Core --> Settings[Settings, theme, icons]
+    FS --> Windows[Windows files and drives]
+    Size --> Cache[Local size cache]
+    Cache --> SQLite[(SQLite on your PC)]
+    FTP --> Remote[FTP/FTPS server you configure]
+    Settings --> LocalData[Local preferences JSON]
+```
+
 ## Security and privacy
 
 - No telemetry in the executable

@@ -65,6 +65,26 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 
 Veja o [CHANGELOG.md](CHANGELOG.md) para a lista completa.
 
+## Arquitetura
+
+A interface WPF conversa com um coordenador central que usa serviços dedicados para o sistema de arquivos, cálculo de tamanho de pastas, transferências, FTP/FTPS opcional e configurações locais. Os resultados de tamanho podem ser armazenados em cache SQLite no seu PC.
+
+```mermaid
+flowchart TD
+    User[Mouse, teclado, arrastar e soltar ou gamepad] --> UI[Interface WPF]
+    UI --> Core[Coordenador do app]
+    Core --> FS[Serviço de arquivos]
+    Core --> Size[Cálculo de tamanho]
+    Core --> Transfer[Transferências]
+    Core --> FTP[Serviço FTP/FTPS]
+    Core --> Settings[Configurações, tema, ícones]
+    FS --> Windows[Arquivos e unidades do Windows]
+    Size --> Cache[Cache local de tamanhos]
+    Cache --> SQLite[(SQLite no seu PC)]
+    FTP --> Remote[Servidor FTP/FTPS que você configura]
+    Settings --> LocalData[Preferências locais em JSON]
+```
+
 ## Segurança e privacidade
 
 - Sem telemetria no executável
