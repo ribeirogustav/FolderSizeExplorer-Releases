@@ -15,10 +15,10 @@ Este arquivo é gerado a partir do inventário de dependências e versões fixad
 | QRCoder | 1.8.0 | MIT |
 | System.Drawing.Common | 8.0.2 | MIT |
 | System.Security.Cryptography.ProtectedData | 8.0.0 | MIT |
-| SQLitePCLRaw.bundle_e_sqlite3 | 2.1.10 | Apache-2.0 |
-| SQLitePCLRaw.core | 2.1.10 | Apache-2.0 |
-| SQLitePCLRaw.lib.e_sqlite3 | 2.1.10 | Apache-2.0 |
-| SQLitePCLRaw.provider.e_sqlite3 | 2.1.10 | Apache-2.0 |
+| SQLitePCLRaw.bundle_e_sqlite3 | 2.1.12 | Apache-2.0 |
+| SQLitePCLRaw.core | 2.1.12 | Apache-2.0 |
+| SQLitePCLRaw.lib.e_sqlite3 | 2.1.12 | Apache-2.0 |
+| SQLitePCLRaw.provider.e_sqlite3 | 2.1.12 | Apache-2.0 |
 | Microsoft.NETCore.App.Runtime.win-x64 | 10.0.9 | MIT |
 | Microsoft.WindowsDesktop.App.Runtime.win-x64 | 10.0.9 | MIT |
 
@@ -5636,7 +5636,7 @@ NIST-developed software is expressly provided "AS IS." NIST MAKES NO WARRANTY OF
 You are solely responsible for determining the appropriateness of using and distributing the software and you assume all risks associated with its use, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and the unavailability or interruption of operation. This software is not intended to be used in any situation where a failure could cause risk of injury or damage to property. The software developed by NIST employees is not subject to copyright protection within the United States.
 ```
 
-## SQLitePCLRaw 2.1.10 - Apache License 2.0
+## SQLitePCLRaw 2.1.12 - Apache License 2.0
 
 ```text
 Apache License, Version 2.0

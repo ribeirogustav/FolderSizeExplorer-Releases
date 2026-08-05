@@ -2,66 +2,108 @@
 
 [English](README.md) | **Português (Brasil)**
 
-O Folder Size Explorer é um aplicativo desktop proprietário para Windows x64 que combina navegação e gerenciamento de arquivos com análise recursiva do tamanho de pastas.
+Folder Size Explorer é um aplicativo desktop proprietário para Windows x64 que combina navegação de arquivos com cálculo recursivo de tamanho de pastas, barra de favoritos no estilo Chrome e FTP/FTPS.
 
-Este repositório é o canal público oficial de distribuição. O código-fonte é privado e não é distribuído aqui.
+Este repositório é o canal oficial de distribuição pública. O código-fonte é privado e não é distribuído aqui.
 
 <p align="center">
-  <img src="assets/folder-size-explorer.webp" alt="Folder Size Explorer exibindo a visualização em colunas e o mapa de tamanhos" width="100%">
+  <img src="assets/folder-size-explorer.webp" alt="Folder Size Explorer — visualização Detalhes, treemap e barra de favoritos" width="100%">
 </p>
 
 ## Download
 
-- [Baixe a versão mais recente](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Versão atual: `1.0.0`
-- Arquivo: `FolderSizeExplorer-1.0.0-win-x64.exe`
+- [Baixar a release mais recente](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
+- Versão atual: `1.0.1`
+- Arquivo: `FolderSizeExplorer-1.0.1-win-x64.exe`
 - Plataforma: Windows 10/11 x64
 
-O executável portable é self-contained e não exige uma instalação separada do .NET.
+O executável portable é self-contained e não exige instalação separada do .NET.
 
 ## Instalação
 
-1. Baixe `FolderSizeExplorer-1.0.0-win-x64.exe` na página oficial da release.
-2. Opcionalmente, confira o checksum SHA-256 com o valor publicado junto da release.
-3. Mova o executável para uma pasta local e execute-o.
+1. Baixe `FolderSizeExplorer-1.0.1-win-x64.exe` na página oficial de releases.
+2. Opcionalmente confira o SHA-256 com o arquivo publicado na release.
+3. Coloque o EXE em uma pasta local e execute.
 
-O aplicativo é executado como o usuário atual e não solicita automaticamente privilégios de administrador. O executável atual não possui assinatura digital, portanto o Windows SmartScreen pode exibir um aviso.
+O aplicativo roda como o usuário atual e não pede administrador automaticamente. O executável atual **não tem assinatura digital**; o Windows SmartScreen pode exibir um aviso.
+
+## Capturas de tela
+
+### Detalhes, treemap e barra de favoritos
+
+<p align="center">
+  <img src="assets/folder-size-explorer.webp" alt="Modo Detalhes" width="100%">
+</p>
+
+### Painel duplo
+
+<p align="center">
+  <img src="assets/dual-pane.webp" alt="Painel duplo" width="100%">
+</p>
+
+### Modo colunas
+
+<p align="center">
+  <img src="assets/columns.webp" alt="Modo colunas" width="100%">
+</p>
+
+### Grade
+
+<p align="center">
+  <img src="assets/grid.webp" alt="Modo grade" width="100%">
+</p>
+
+### Conexão FTP
+
+<p align="center">
+  <img src="assets/ftp-connection.webp" alt="Janela de conexão FTP" width="100%">
+</p>
 
 ## Recursos
 
-- Cálculo assíncrono e recursivo do tamanho de pastas
-- Cache de tamanhos em memória e SQLite
+- Cálculo assíncrono de tamanho de pastas
+- Cache em memória e SQLite
 - Visualizações Detalhes, Colunas, Grade e Painel duplo
-- Mapa visual dos maiores itens visíveis
-- Abas, favoritos e locais recentes
-- Busca local e recursiva por nome
-- Operações locais de arquivos e drag-and-drop
-- Exportação CSV/JSON e comparação de tamanhos
-- Interface disponível em 21 idiomas e culturas
-- Navegação FTP/FTPS para listagens remotas
+- Mapa de tamanho (treemap)
+- Abas, recentes e **barra de favoritos estilo Chrome** (pastas/grupos, ícones, overflow)
+- Busca por nome na pasta e em subpastas
+- Operações locais e drag-and-drop
+- Exportação CSV/JSON e comparação de tamanho
+- Interface em 21 idiomas
+- **FTP/FTPS**: navegar, enviar, baixar e transferir local↔remoto  
+  (modo Automático tenta FTPS e, se falhar, usa FTP)
 
-O suporte a FTP está limitado a navegação e listagem. Download, upload, renomeação e exclusão remotos ainda não estão disponíveis.
+## Novidades da 1.0.1
 
-## Privacidade e segurança
+- Barra de favoritos estilo Chrome (sugestão de [u/testednation](https://www.reddit.com/user/testednation/))
+- FTP/FTPS completo (não é mais só listagem)
+- Segurança FTP Automática e janela de conexão mais clara
+- Abertura mais segura: caminhos FTP/ausentes/lentos abrem em **Este Computador**
 
-O aplicativo não inclui telemetria. Configurações, histórico, cache e perfis FTP são armazenados no perfil local do usuário do Windows. Consulte [PRIVACY.md](PRIVACY.md) para mais detalhes.
+Veja o [CHANGELOG.md](CHANGELOG.md) para a lista completa.
 
-Reporte vulnerabilidades de segurança em privado para `gustavo@grcx.com.br`. Não publique credenciais nem provas de conceito destrutivas em issues públicas. Consulte [SECURITY.md](SECURITY.md).
+## Segurança e privacidade
+
+- Sem telemetria no executável
+- Configurações, cache e perfis FTP ficam no perfil local do Windows
+- Senhas FTP usam DPAPI do Windows quando “Lembrar senha” está ativo
+- FTPS usa a validação de certificado padrão do Windows
+
+Reporte vulnerabilidades em privado: `gustavo@grcx.com.br`.  
+Veja [SECURITY.md](SECURITY.md) e [PRIVACY.md](PRIVACY.md).
 
 ## Suporte
 
-- Bugs públicos não sensíveis: [GitHub Issues](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/issues)
 - Suporte: `support@grcx.com.br`
-- Privacidade e assuntos legais: `contact@grcx.com.br`
+- Privacidade / jurídico: `contact@grcx.com.br`
 - Segurança: `gustavo@grcx.com.br`
 - Site: <https://www.grcx.com.br/>
-
-Consulte [SUPPORT.md](SUPPORT.md) para conhecer a política de suporte.
+- Issues (não sensíveis): <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/issues>
 
 ## Licença
 
-Copyright (c) 2026 Gustavo Ribeiro de Carvalho, atuando sob a marca GRCX. Todos os direitos reservados.
+Copyright © 2026 Gustavo Ribeiro de Carvalho, atuando sob a marca GRCX. Todos os direitos reservados.
 
-O Folder Size Explorer é um freeware proprietário. O uso pessoal e empresarial interno é permitido. Redistribuição pública ou a terceiros, mirrors, modificação e engenharia reversa não são autorizados sem permissão por escrito.
+Freeware proprietário: uso pessoal e empresarial interno permitidos. Redistribuição pública, mirrors, modificação e engenharia reversa não são autorizados sem permissão escrita.
 
-Consulte [LICENSE](LICENSE) e [EULA.md](EULA.md) para conhecer os termos completos.
+Veja [LICENSE](LICENSE) e [EULA.md](EULA.md).

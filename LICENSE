@@ -1,108 +1,105 @@
-FOLDER SIZE EXPLORER - LICENCA PROPRIETARIA DE FREEWARE
-Versao 1.0 - 23 de julho de 2026
+FOLDER SIZE EXPLORER - PROPRIETARY FREEWARE LICENSE
+Version 1.0 - July 23, 2026
 
-Copyright (c) 2026 Gustavo Ribeiro de Carvalho, atuando sob a marca GRCX, Brasil.
-Todos os direitos reservados.
+Copyright (c) 2026 Gustavo Ribeiro de Carvalho, doing business as GRCX, Brazil.
+All rights reserved.
 
-1. TITULARIDADE
+1. OWNERSHIP
 
-O Folder Size Explorer, incluindo seu codigo-fonte, binarios, documentacao original
-e demais componentes autorais proprios, pertence a Gustavo Ribeiro de Carvalho,
-pessoa fisica no Brasil que atua sob a marca GRCX.
+Folder Size Explorer, including its source code, binaries, original documentation,
+and other proprietary authored components, is owned by Gustavo Ribeiro de Carvalho,
+an individual in Brazil doing business under the GRCX brand.
 
-Esta licenca nao transfere propriedade intelectual ao usuario.
+This license does not transfer intellectual property ownership to the user.
 
-2. PERMISSAO DE USO
+2. GRANT OF USE
 
-GRCX concede ao usuario uma licenca limitada, nao exclusiva, intransferivel e
-gratuita para:
+GRCX grants the user a limited, non-exclusive, non-transferable, royalty-free
+license to:
 
-a) baixar o binario por um canal oficial;
-b) instalar e executar copias inalteradas do aplicativo para uso pessoal; e
-c) instalar e executar copias inalteradas para uso interno de uma empresa ou
-   organizacao, em dispositivos sob seu controle.
+a) download the binary from an official channel;
+b) install and run unmodified copies of the application for personal use; and
+c) install and run unmodified copies for internal use by a company or organization
+   on devices under its control.
 
-Uma copia de seguranca pode ser mantida exclusivamente para o uso autorizado.
-Distribuicao interna deve permanecer restrita a usuarios e dispositivos da mesma
-organizacao e nao autoriza entrega do aplicativo a clientes, parceiros ou terceiros.
+One backup copy may be kept solely for authorized use. Internal deployment must
+remain limited to users and devices of the same organization and does not authorize
+delivery of the application to customers, partners, or other third parties.
 
-3. RESTRICOES
+3. RESTRICTIONS
 
-Sem autorizacao previa e escrita da GRCX, e proibido:
+Without prior written authorization from GRCX, it is prohibited to:
 
-a) publicar, redistribuir, espelhar, sublicenciar, vender, alugar ou disponibilizar
-   o aplicativo ou seu codigo-fonte a terceiros;
-b) modificar, adaptar, traduzir, criar obra derivada ou incorporar o aplicativo em
-   outro produto;
-c) realizar engenharia reversa, descompilar, desmontar ou tentar obter o
-   codigo-fonte a partir dos binarios, exceto quando e somente na medida em que
-   esse direito nao possa ser limitado pela legislacao aplicavel;
-d) remover ou alterar avisos de autoria, titularidade, licenca ou marcas;
-e) usar os nomes Folder Size Explorer ou GRCX, logos, imagens, QR codes,
-   identificadores de pagamento ou outros ativos para sugerir afiliacao, endosso
-   ou origem oficial; e
-f) contornar controles tecnicos ou distribuir versoes alteradas como se fossem
-   oficiais.
+a) publish, redistribute, mirror, sublicense, sell, rent, or otherwise make the
+   application or its source code available to third parties;
+b) modify, adapt, translate, create derivative works, or incorporate the application
+   into another product;
+c) reverse engineer, decompile, disassemble, or attempt to obtain source code from
+   binaries, except to the extent such a right cannot be limited by applicable law;
+d) remove or alter authorship, ownership, license, or trademark notices;
+e) use the names Folder Size Explorer or GRCX, logos, images, QR codes, payment
+   identifiers, or other assets to suggest affiliation, endorsement, or official
+   origin; and
+f) bypass technical controls or distribute altered versions as if they were official.
 
-4. CANAIS OFICIAIS
+4. OFFICIAL CHANNELS
 
-Os canais oficiais sao:
+Official channels are:
 
 - https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases
 - https://www.grcx.com.br/
 
-Copias obtidas em outros locais nao sao autorizadas ou verificadas pela GRCX.
+Copies obtained elsewhere are not authorized or verified by GRCX.
 
-5. APOIO E DOACOES
+5. SUPPORT AND DONATIONS
 
-O uso permitido nesta licenca nao depende de doacao. Contribuicoes sao opcionais,
-nao constituem compra, assinatura ou aquisicao de direitos sobre o aplicativo e
-nao ampliam a permissao de copiar, modificar ou redistribuir.
+Authorized use under this license does not require a donation. Contributions are
+optional, do not constitute a purchase, subscription, or acquisition of rights in
+the application, and do not expand permission to copy, modify, or redistribute.
 
-6. COMPONENTES DE TERCEIROS
+6. THIRD-PARTY COMPONENTS
 
-Componentes de terceiros permanecem sujeitos as respectivas licencas. Esta
-licenca proprietaria aplica-se somente aos componentes autorais da GRCX e nao
-substitui direitos ou obrigacoes das licencas de terceiros.
+Third-party components remain subject to their respective licenses. This proprietary
+license applies only to GRCX-authored components and does not replace rights or
+obligations under third-party licenses.
 
-7. ATUALIZACOES E SUPORTE
+7. UPDATES AND SUPPORT
 
-Esta licenca nao obriga a GRCX a fornecer atualizacoes, manutencao, compatibilidade
-futura ou suporte. Quando fornecidos, esses servicos seguem as politicas publicadas
-com a versao correspondente.
+This license does not obligate GRCX to provide updates, maintenance, future
+compatibility, or support. When provided, such services follow the policies published
+with the corresponding version.
 
-8. AUSENCIA DE GARANTIA
+8. DISCLAIMER OF WARRANTY
 
-NA MAXIMA EXTENSAO PERMITIDA PELA LEGISLACAO, O APLICATIVO E FORNECIDO "NO ESTADO
-EM QUE SE ENCONTRA", SEM GARANTIAS EXPRESSAS OU IMPLICITAS. O USUARIO E RESPONSAVEL
-POR VALIDAR CAMINHOS, BACKUPS, PERMISSOES E OPERACOES DE ARQUIVOS.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE APPLICATION IS PROVIDED "AS IS", WITHOUT
+EXPRESS OR IMPLIED WARRANTIES. THE USER IS RESPONSIBLE FOR VALIDATING PATHS, BACKUPS,
+PERMISSIONS, AND FILE OPERATIONS.
 
-9. LIMITACAO DE RESPONSABILIDADE
+9. LIMITATION OF LIABILITY
 
-NA MAXIMA EXTENSAO PERMITIDA PELA LEGISLACAO, A GRCX E O AUTOR NAO SERAO
-RESPONSAVEIS POR DANOS INDIRETOS, PERDA DE DADOS, LUCROS CESSANTES, INTERRUPCAO DE
-ATIVIDADE OU OUTROS PREJUIZOS DECORRENTES DO USO OU DA IMPOSSIBILIDADE DE USO DO
-APLICATIVO. DIREITOS QUE NAO POSSAM SER EXCLUIDOS PELA LEGISLACAO PERMANECEM
-INALTERADOS.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, GRCX AND THE AUTHOR SHALL NOT BE LIABLE FOR
+INDIRECT DAMAGES, DATA LOSS, LOST PROFITS, BUSINESS INTERRUPTION, OR OTHER LOSSES
+ARISING FROM USE OF OR INABILITY TO USE THE APPLICATION. RIGHTS THAT CANNOT BE
+EXCLUDED BY LAW REMAIN UNAFFECTED.
 
-10. ENCERRAMENTO
+10. TERMINATION
 
-A licenca termina automaticamente em caso de violacao destes termos. Encerrada a
-licenca, o usuario deve interromper o uso e excluir as copias sob seu controle,
-sem prejuizo das obrigacoes que, por sua natureza, devam continuar vigentes.
+This license terminates automatically upon violation of these terms. After
+termination, the user must stop using the application and delete copies under their
+control, without prejudice to obligations that by their nature should survive.
 
-11. LEGISLACAO
+11. GOVERNING LAW
 
-Esta licenca e regida pelas leis da Republica Federativa do Brasil, respeitados os
-direitos obrigatorios aplicaveis ao usuario.
+This license is governed by the laws of the Federative Republic of Brazil, subject to
+mandatory rights applicable to the user.
 
-12. CONTATO
+12. CONTACT
 
-Assuntos legais e de privacidade: contact@grcx.com.br
-Suporte: support@grcx.com.br
+Legal and privacy matters: contact@grcx.com.br
+Support: support@grcx.com.br
 
-O EULA.md distribuido com o aplicativo complementa esta licenca. Os documentos
-devem ser interpretados em conjunto. A permissao especifica de uso e implantacao
-interna da secao 2 nao e reduzida por restricoes gerais contra redistribuicao a
-terceiros. Em caso de divergencia sobre o escopo da licenca, prevalece este arquivo,
-sempre respeitados os direitos obrigatorios do usuario.
+The EULA.md distributed with the application complements this license. The documents
+must be read together. The specific permission for use and internal deployment in
+section 2 is not reduced by general restrictions against redistribution to third
+parties. If there is a conflict about license scope, this file prevails, always
+subject to the user's mandatory legal rights.

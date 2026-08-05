@@ -148,13 +148,10 @@ Uma release estável só pode ser publicada quando:
 
 ## 9. Bloqueadores atuais da primeira release oficial
 
-Conforme auditoria de 23 de julho de 2026:
+Conforme a revisão atual:
 
-- FTPS aceita qualquer certificado;
-- FTP sem criptografia é o padrão;
-- `SQLitePCLRaw.lib.e_sqlite3 2.1.10` possui alerta `NU1903` High;
-- copy recursivo segue reparse points;
-- rename aceita paths além de um nome simples;
+- FTPS explícito é o padrão e usa a validação de certificado do Windows; testes manuais com servidores/cadeias reais ainda são gate de release;
+- FTP sem criptografia permanece disponível por compatibilidade, com aviso explícito na interface;
 - CSV permite formula injection;
 - não há certificado/configuração Authenticode; e
 - avisos completos de terceiros ainda precisam ser empacotados e verificados.

@@ -66,9 +66,9 @@ Quando o usuário configura um servidor, o aplicativo envia ao servidor escolhid
 - endereço do servidor e porta;
 - nome de usuário e senha;
 - comandos e paths remotos; e
-- solicitações de listagem.
+- solicitações de listagem e operações de transferência/gerenciamento iniciadas pelo usuário.
 
-O servidor devolve nomes, tipos, tamanhos e datas. FTP sem criptografia transmite credenciais e tráfego sem proteção. A implementação FTPS da versão auditada aceita qualquer certificado e não deve ser considerada adequada para credenciais sensíveis até correção publicada.
+O servidor devolve nomes, tipos, tamanhos, datas e o conteúdo solicitado em downloads. FTP sem criptografia transmite credenciais e tráfego sem proteção. FTPS explícito usa a validação padrão de certificados do Windows; certificados inválidos ou não confiáveis são rejeitados.
 
 A GRCX não controla a política de privacidade do servidor escolhido pelo usuário.
 

@@ -1,114 +1,131 @@
-# Política de Segurança
+# Security Policy
 
-## Versões suportadas
+## Supported versions
 
-| Versão | Suporte de segurança |
+| Version | Security support |
 | --- | --- |
-| Release estável mais recente | Melhor esforço |
-| Releases anteriores | Atualização para a mais recente pode ser exigida |
-| Builds Debug, `OLD`, modificados ou de terceiros | Não suportados |
+| Latest stable release | Best effort |
+| Previous releases | Upgrade to the latest may be required |
+| Debug, `OLD`, modified, or third-party builds | Unsupported |
 
-A relação de releases oficiais fica em <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases>.
+Official releases: <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases>
 
-## Reporte responsável
+## Responsible disclosure
 
-Envie vulnerabilidades de forma privada para:
+Report vulnerabilities privately to:
 
 `gustavo@grcx.com.br`
 
-Use um assunto como: `[SECURITY] Folder Size Explorer - resumo do problema`.
+Use a subject such as: `[SECURITY] Folder Size Explorer - short summary`.
 
-Não abra issue pública antes de receber orientação, especialmente quando houver possibilidade de exposição de credenciais, execução de código, perda de dados ou bypass de segurança.
+Do not open a public issue before receiving guidance, especially when credentials, code execution, data loss, or security bypass may be involved.
 
-## Informações úteis no reporte
+## Useful information in a report
 
-- versão exata do aplicativo;
-- versão/edição do Windows;
-- componente afetado;
-- pré-condições e passos de reprodução;
-- impacto observado ou provável;
-- prova de conceito mínima e não destrutiva;
-- logs sanitizados, se existirem;
-- sugestão de correção, se disponível; e
-- forma segura de contato.
+- exact application version;
+- Windows version/edition;
+- affected component;
+- preconditions and reproduction steps;
+- observed or likely impact;
+- minimal non-destructive proof of concept;
+- sanitized logs, if any;
+- suggested fix, if available; and
+- a secure way to contact you.
 
-Não envie:
+Do not send:
 
-- senhas ou arquivos reais de credenciais;
-- tokens, chaves privadas ou seed phrases;
-- dados de terceiros sem autorização;
-- arquivos maliciosos não solicitados; ou
-- exploração contra sistemas que não pertençam ao pesquisador.
+- real passwords or credential files;
+- tokens, private keys, or seed phrases;
+- third-party data without authorization;
+- unsolicited malware samples; or
+- exploits against systems the researcher does not own.
 
-## Processo de tratamento
+## Handling process
 
-A GRCX pretende:
+GRCX intends to:
 
-1. confirmar o recebimento quando possível;
-2. reproduzir e classificar o impacto;
-3. preparar correção ou mitigação;
-4. coordenar divulgação proporcional ao risco; e
-5. registrar a correção nas notas da release.
+1. acknowledge receipt when possible;
+2. reproduce and classify impact;
+3. prepare a fix or mitigation;
+4. coordinate disclosure proportional to risk; and
+5. record the fix in release notes.
 
-Não há SLA contratual ou programa de bug bounty. Não realize testes que causem indisponibilidade, perda de dados, acesso não autorizado ou violação de lei.
+There is no contractual SLA or bug bounty. Do not perform testing that causes outage, data loss, unauthorized access, or violation of law.
 
-## Escopo
+## Scope
 
-Estão no escopo:
+In scope:
 
-- executáveis oficiais do Folder Size Explorer;
-- código e scripts mantidos no repositório privado;
-- fluxo de build e publicação oficial;
-- armazenamento local criado pelo aplicativo;
-- operações de arquivos iniciadas pela interface; e
-- integração FTP/FTPS implementada pelo produto.
+- official Folder Size Explorer executables;
+- code and scripts maintained in the private repository;
+- official build and publication flow;
+- local storage created by the application;
+- file operations started from the UI; and
+- the product's FTP/FTPS integration.
 
-Serviços de terceiros, servidores FTP do usuário, Windows, GitHub, provedores de pagamento e o site GRCX seguem programas próprios, salvo falha causada diretamente pela integração do aplicativo.
+Third-party services, user-provided FTP servers, Windows, GitHub, payment providers, and the GRCX website follow their own programs, unless a failure is caused directly by the application's integration.
 
-## Limitações de segurança conhecidas na versão auditada
+## Known security limitations in the audited version
 
-Antes da primeira release pública oficial, devem ser tratados como bloqueadores:
+Before the first official public release, treat these as blockers:
 
-- FTPS configurado com aceitação de qualquer certificado;
-- FTP sem criptografia como configuração padrão;
-- dependência nativa SQLite com alerta `NU1903` de alta gravidade;
-- cópia recursiva que pode seguir junctions/symlinks;
-- rename que aceita paths além de um nome simples;
-- CSV sem neutralização de formula injection; e
-- ausência de assinatura Authenticode e provenance do binário.
+- CSV export without formula-injection neutralization; and
+- missing Authenticode signing and binary provenance.
 
-Enquanto não houver release corrigida:
+Until a corrected release is available:
 
-- não use FTP/FTPS com credenciais sensíveis;
-- não copie árvores que contenham links desconhecidos;
-- revise nomes e destinos antes de renomear/mover;
-- trate CSV exportado como dado não confiável antes de abrir em planilha; e
-- valide a origem de qualquer executável.
+- prefer FTPS or Automatic security; use plain FTP only on trusted networks;
+- do not copy trees that contain unknown links;
+- review names and destinations before rename/move;
+- treat exported CSV as untrusted data before opening in a spreadsheet; and
+- validate the origin of any executable.
 
-## Proteções existentes
+## Existing protections
 
-- execução como usuário atual, sem elevação automática;
-- senha FTP persistida com DPAPI `CurrentUser`;
-- queries SQLite fixas e parametrizadas;
-- busca e cálculo de tamanho evitam reparse points;
-- exclusão pela interface usa a Lixeira e pede confirmação; e
-- nenhuma telemetria ou atualização automática foi identificada na versão atual.
+- runs as the current user, without automatic elevation;
+- FTP passwords persisted with DPAPI `CurrentUser`;
+- FTPS certificates validated by the standard Windows mechanism;
+- new connections default to **Automatic** security (try explicit FTPS, then plain FTP) and plain FTP shows an unencrypted-transport warning;
+- connection URLs reject embedded credentials, SFTP, and unsupported schemes;
+- unchecking “Remember password” removes the persisted credential; passwords are never embedded in URLs;
+- FTP links are shown without following or hidden; recursive following is not offered;
+- timeouts, retries, and keep-alive have finite limits and are validated before connect;
+- native SQLite dependency pinned outside advisory `GHSA-2m69-gcr7-jv3q`;
+- SQLite queries are fixed and parameterized;
+- search and size calculation avoid reparse points;
+- local copies reject junctions and symlinks before creating the destination;
+- cross-volume moves use staging and SHA-256 verification before removing the source;
+- local rename accepts only a single valid Windows name component;
+- FTP create/rename reject special segments, separators, and control characters;
+- FTP delete revalidates the remote selection immediately before the destructive operation;
+- UI delete uses the Recycle Bin and asks for confirmation; and
+- no telemetry or automatic update was identified in the current version.
 
-Esses controles não constituem certificação de segurança.
+These controls are not a security certification.
 
-## Autenticidade das releases
+### FTP certificates and protocols
 
-Toda release pública, inclusive pré-release, deve incluir:
+Explicit FTPS uses Windows/.NET chain and hostname validation. The current implementation does not offer temporary trust, host/fingerprint pinning, or a persistent exception for self-signed certificates. Adding that flow requires presenting certificate details, binding any trust to host and fingerprint, and detecting certificate changes; until then, invalid or untrusted certificates are rejected.
 
-- executável ou ZIP versionado;
-- checksum SHA-256;
-- assinatura Authenticode válida;
-- notas de versão;
-- licença/EULA e avisos de terceiros; e
-- link para esta política.
+Automatic security tries FTPS first and falls back to plain FTP only if the secure connection fails. Plain FTP transmits credentials and data without encryption and should be used only on trusted local networks.
 
-Não distribua como release oficial um binário que falhe nos gates de [`DISTRIBUTION.md`](DISTRIBUTION.md).
+SFTP is not a variant of FTP/FTPS and is not supported by the current FluentFTP backend. `sftp://` addresses are rejected rather than interpreted as FTP.
 
-## Créditos
+Downloads verify transferred files by size rather than remote checksum, because many legacy servers and appliances report unreliable hash values. Size verification still rejects truncated transfers when the remote size is available.
 
-Crédito público a pesquisadores será considerado somente com consentimento explícito e após a disponibilização de correção ou mitigação.
+## Release authenticity
+
+Every public release, including pre-releases, must include:
+
+- a versioned executable or ZIP;
+- SHA-256 checksum;
+- valid Authenticode signature;
+- release notes;
+- license/EULA and third-party notices; and
+- a link to this policy.
+
+Do not distribute as an official release any binary that fails the gates in [`DISTRIBUTION.md`](DISTRIBUTION.md).
+
+## Credits
+
+Public credit to researchers will be considered only with explicit consent and after a fix or mitigation is available.
