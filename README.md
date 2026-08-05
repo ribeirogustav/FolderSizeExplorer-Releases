@@ -52,6 +52,7 @@ The application runs as the current user and does not automatically request admi
 - Local file operations and drag-and-drop
 - CSV/JSON export and size comparison
 - Interface available in 21 locales
+- XInput gamepad navigation aids
 - **FTP/FTPS**: browse, upload, download, and local↔remote transfers  
   (Automatic security tries FTPS first, then plain FTP)
 

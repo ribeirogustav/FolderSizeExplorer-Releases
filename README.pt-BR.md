@@ -52,6 +52,7 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - Operações locais e drag-and-drop
 - Exportação CSV/JSON e comparação de tamanho
 - Interface em 21 idiomas
+- Atalhos de navegação com gamepad XInput
 - **FTP/FTPS**: navegar, enviar, baixar e transferir local↔remoto  
   (modo Automático tenta FTPS e, se falhar, usa FTP)
 
