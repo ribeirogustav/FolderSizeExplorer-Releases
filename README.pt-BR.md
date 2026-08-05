@@ -29,35 +29,17 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 
 ## Capturas de tela
 
-### Detalhes, treemap e barra de favoritos
+| Detalhes + treemap + barra de favoritos | Painel duplo |
+| --- | --- |
+| ![Modo Detalhes](assets/folder-size-explorer.webp) | ![Painel duplo](assets/dual-pane.webp) |
 
-<p align="center">
-  <img src="assets/folder-size-explorer.webp" alt="Modo Detalhes" width="100%">
-</p>
+| Modo colunas | Grade |
+| --- | --- |
+| ![Modo colunas](assets/columns.webp) | ![Modo grade](assets/grid.webp) |
 
-### Painel duplo
-
-<p align="center">
-  <img src="assets/dual-pane.webp" alt="Painel duplo" width="100%">
-</p>
-
-### Modo colunas
-
-<p align="center">
-  <img src="assets/columns.webp" alt="Modo colunas" width="100%">
-</p>
-
-### Grade
-
-<p align="center">
-  <img src="assets/grid.webp" alt="Modo grade" width="100%">
-</p>
-
-### Conexão FTP
-
-<p align="center">
-  <img src="assets/ftp-connection.webp" alt="Janela de conexão FTP" width="100%">
-</p>
+| Conexão FTP |
+| --- |
+| ![Conexão FTP](assets/ftp-connection.webp) |
 
 ## Recursos
 

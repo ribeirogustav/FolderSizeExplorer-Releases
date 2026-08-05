@@ -29,35 +29,17 @@ The application runs as the current user and does not automatically request admi
 
 ## Screenshots
 
-### Details, treemap, and bookmark bar
+| Details + treemap + bookmark bar | Dual pane |
+| --- | --- |
+| ![Details view](assets/folder-size-explorer.webp) | ![Dual pane](assets/dual-pane.webp) |
 
-<p align="center">
-  <img src="assets/folder-size-explorer.webp" alt="Details view" width="100%">
-</p>
+| Columns view | Grid view |
+| --- | --- |
+| ![Columns view](assets/columns.webp) | ![Grid view](assets/grid.webp) |
 
-### Dual pane
-
-<p align="center">
-  <img src="assets/dual-pane.webp" alt="Dual pane" width="100%">
-</p>
-
-### Columns view
-
-<p align="center">
-  <img src="assets/columns.webp" alt="Columns view" width="100%">
-</p>
-
-### Grid view
-
-<p align="center">
-  <img src="assets/grid.webp" alt="Grid view" width="100%">
-</p>
-
-### FTP connection
-
-<p align="center">
-  <img src="assets/ftp-connection.webp" alt="FTP connection window" width="100%">
-</p>
+| FTP connection |
+| --- |
+| ![FTP connection](assets/ftp-connection.webp) |
 
 ## Features
 
