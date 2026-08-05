@@ -45,7 +45,7 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 
 - Cálculo assíncrono de tamanho de pastas
 - Cache em memória e SQLite
-- Visualizações Detalhes, Colunas, Grade e Painel duplo
+- Modos de visualização: Detalhes, Colunas (estilo Miller/Finder), Grade e Painel duplo
 - Mapa de tamanho (treemap)
 - Abas, recentes e **barra de favoritos estilo Chrome** (pastas/grupos, ícones, overflow)
 - Busca por nome na pasta e em subpastas

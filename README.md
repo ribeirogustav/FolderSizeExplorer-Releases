@@ -45,7 +45,7 @@ The application runs as the current user and does not automatically request admi
 
 - Asynchronous recursive folder-size calculation
 - In-memory and SQLite size cache
-- Details, Columns, Grid, and Dual-pane views
+- View modes: Details, Columns (Miller/Finder-like), Grid, and Dual pane
 - Visual size map (treemap) for the largest visible items
 - Tabs, recents, and a **Chrome-style bookmark bar** (folders/groups, custom icons, overflow)
 - Local and recursive filename search
