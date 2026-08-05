@@ -29,17 +29,17 @@ The application runs as the current user and does not automatically request admi
 
 ## Screenshots
 
-| Details + treemap + bookmark bar | Dual pane |
+| Details + treemap + bookmark bar | Bookmark folder open |
 | --- | --- |
-| ![Details view](assets/folder-size-explorer.webp) | ![Dual pane](assets/dual-pane.webp) |
+| ![Details view](assets/folder-size-explorer.webp) | ![Bookmark folder](assets/dual-pane.webp) |
 
-| Columns view | Grid view |
+| Arabic UI (RTL) | FTP connection |
 | --- | --- |
-| ![Columns view](assets/columns.webp) | ![Grid view](assets/grid.webp) |
+| ![Arabic RTL interface](assets/columns.webp) | ![FTP connection](assets/grid.webp) |
 
-| FTP connection |
+| Language settings |
 | --- |
-| ![FTP connection](assets/ftp-connection.webp) |
+| ![Language list](assets/ftp-connection.webp) |
 
 ## Features
 

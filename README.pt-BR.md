@@ -29,17 +29,17 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 
 ## Capturas de tela
 
-| Detalhes + treemap + barra de favoritos | Painel duplo |
+| Detalhes + treemap + barra de favoritos | Pasta de favoritos aberta |
 | --- | --- |
-| ![Modo Detalhes](assets/folder-size-explorer.webp) | ![Painel duplo](assets/dual-pane.webp) |
+| ![Modo Detalhes](assets/folder-size-explorer.webp) | ![Pasta de favoritos](assets/dual-pane.webp) |
 
-| Modo colunas | Grade |
+| Interface em árabe (RTL) | Conexão FTP |
 | --- | --- |
-| ![Modo colunas](assets/columns.webp) | ![Modo grade](assets/grid.webp) |
+| ![Interface RTL em árabe](assets/columns.webp) | ![Conexão FTP](assets/grid.webp) |
 
-| Conexão FTP |
+| Configuração de idioma |
 | --- |
-| ![Conexão FTP](assets/ftp-connection.webp) |
+| ![Lista de idiomas](assets/ftp-connection.webp) |
 
 ## Recursos
 
