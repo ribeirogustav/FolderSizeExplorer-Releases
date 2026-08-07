@@ -45,10 +45,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/folder-size-explorer.webp" alt="Folder Size Explorer — Details view, treemap, and bookmark bar" width="100%">
-</p>
-
-<p align="center">
+  <img src="assets/folder-size-explorer.webp" alt="Folder Size Explorer — Details view, treemap, and bookmark bar" width="100%"><br>
   <em>Folder Size Explorer on Windows 11.</em>
 </p>
 
