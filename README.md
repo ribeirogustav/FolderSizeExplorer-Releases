@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="foldersizeexplorer.svg" width="300" alt="Folder Size Explorer" />
+  <img src="assets/foldersizeexplorer.svg" width="300" alt="Folder Size Explorer" />
 </p>
 
 <p align="center">
@@ -127,7 +127,7 @@ flowchart TD
 - FTPS uses standard Windows certificate validation
 
 Report vulnerabilities privately to `gustavo@grcx.com.br`.  
-See [SECURITY.md](SECURITY.md) and [PRIVACY.md](PRIVACY.md).
+See [SECURITY.md](docs/SECURITY.md) and [PRIVACY.md](docs/PRIVACY.md).
 
 ## Support
 
@@ -141,7 +141,7 @@ See [SECURITY.md](SECURITY.md) and [PRIVACY.md](PRIVACY.md).
 | Website | <https://www.grcx.com.br/> |
 | External tip jar | <https://buymeacoffee.com/ribeirogustav> |
 
-See also [SUPPORT.md](SUPPORT.md).
+See also [SUPPORT.md](docs/SUPPORT.md).
 
 ## License
 
@@ -149,4 +149,4 @@ Copyright © 2026 Gustavo Ribeiro de Carvalho, doing business as GRCX. All right
 
 Proprietary freeware: personal and internal business use are allowed. Public redistribution, mirrors, modification, and reverse engineering are not authorized without written permission.
 
-See [LICENSE](LICENSE) and [EULA.md](EULA.md).
+See [LICENSE](LICENSE) and [EULA.md](docs/EULA.md).

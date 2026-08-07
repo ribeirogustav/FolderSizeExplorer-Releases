@@ -81,4 +81,4 @@ This release focuses on two main areas:
 ### Relevant limitations
 
 - Version `1.0.0` was published without Authenticode signing; version `1.0.1` must not be published until current security and distribution gates are complete.
-- See `SECURITY.md` and `DISTRIBUTION.md` before publication.
+- See `docs/SECURITY.md` and `docs/DISTRIBUTION.md` before publication.
