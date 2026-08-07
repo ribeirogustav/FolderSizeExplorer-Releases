@@ -1,10 +1,44 @@
-# Folder Size Explorer
+<p align="center">
+  <img src="foldersizeexplorer.svg" width="300" alt="Folder Size Explorer" />
+</p>
 
-[English](README.md) | **Português (Brasil)**
+<p align="center">
+  <strong>Veja suas pastas. Saiba o tamanho delas.</strong>
+</p>
 
-Folder Size Explorer é um aplicativo desktop proprietário para Windows x64 que combina navegação de arquivos com cálculo recursivo de tamanho de pastas, barra de favoritos no estilo Chrome e FTP/FTPS.
+<p align="center">
+  <img alt="versão" src="https://img.shields.io/badge/version-1.0.1-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="licença" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
+  <img alt="plataforma" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
+</p>
 
-Este repositório é o canal oficial de distribuição pública. O código-fonte é privado e não é distribuído aqui.
+<p align="center">
+  <a href="README.md">English</a> · <strong>Português (Brasil)</strong>
+</p>
+
+<p>
+  Folder Size Explorer é um gerenciador de arquivos gratuito e portátil para Windows 10 e Windows 11 que mostra o tamanho real das pastas diretamente enquanto você navega. Ele combina análise recursiva de tamanho com gerenciamento de arquivos, navegação em colunas no estilo Finder, treemap visual, abas, favoritos, vários modos de visualização e FTP/FTPS.
+</p>
+
+<p>
+  Eu criei o Folder Size Explorer originalmente para uso próprio porque queria que a análise recursiva do tamanho das pastas fizesse parte natural da navegação diária, e não fosse uma ferramenta separada. A ideia é ter um gerenciador leve em que descobrir o que está ocupando espaço seja parte do próprio fluxo de navegação.
+</p>
+
+<p>
+  Folder Size Explorer é <strong>freeware proprietário</strong>: o uso pessoal e empresarial interno é gratuito, sem versão Pro, recursos bloqueados, assinatura ou telemetria. Este repositório é o canal oficial de distribuição pública; o código-fonte é privado.
+</p>
+
+<p align="center">
+  <a href="#download">Download</a>
+  ·
+  <a href="#recursos">Recursos</a>
+  ·
+  <a href="#capturas-de-tela">Capturas de tela</a>
+  ·
+  <a href="#suporte">Suporte</a>
+  ·
+  <a href="#licença">Licença</a>
+</p>
 
 <p align="center">
   <img src="assets/folder-size-explorer.webp" alt="Folder Size Explorer — visualização Detalhes, treemap e barra de favoritos" width="100%">
@@ -97,11 +131,17 @@ Veja [SECURITY.md](SECURITY.md) e [PRIVACY.md](PRIVACY.md).
 
 ## Suporte
 
-- Suporte: `support@grcx.com.br`
-- Privacidade / jurídico: `contact@grcx.com.br`
-- Segurança: `gustavo@grcx.com.br`
-- Site: <https://www.grcx.com.br/>
-- Issues (não sensíveis): <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/issues>
+| Assunto | Canal |
+| --- | --- |
+| Suporte | `support@grcx.com.br` |
+| Bugs não sensíveis | <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/issues> |
+| Privacidade / jurídico | `contact@grcx.com.br` |
+| Segurança | `gustavo@grcx.com.br` |
+| Doações | `billing@grcx.com.br` |
+| Site | <https://www.grcx.com.br/> |
+| Apoio externo | <https://buymeacoffee.com/ribeirogustav> |
+
+Consulte também [SUPPORT.md](SUPPORT.md).
 
 ## Licença
 

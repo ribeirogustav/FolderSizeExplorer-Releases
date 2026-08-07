@@ -10,6 +10,7 @@
 | Vulnerabilidades | `gustavo@grcx.com.br` |
 | Doações e identificação de pagamento | `billing@grcx.com.br` |
 | Site | <https://www.grcx.com.br/> |
+| Apoio externo | <https://buymeacoffee.com/ribeirogustav> |
 
 Não publique vulnerabilidades, credenciais ou dados pessoais em issues. Consulte [`SECURITY.md`](SECURITY.md).
 
