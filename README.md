@@ -13,10 +13,6 @@
 </p>
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/ribeirogustav"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=ribeirogustav&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" height="36" /></a>
-</p>
-
-<p align="center">
   <strong>English</strong> · <a href="README.pt-BR.md">Português (Brasil)</a>
 </p>
 
@@ -42,6 +38,10 @@
   <a href="#support">Support</a>
   ·
   <a href="#license">License</a>
+</p>
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/ribeirogustav"><img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=ribeirogustav&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" height="36" /></a>
 </p>
 
 <p align="center">
