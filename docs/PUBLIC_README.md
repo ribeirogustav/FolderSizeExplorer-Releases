@@ -1,6 +1,6 @@
 # Folder Size Explorer
 
-![Folder Size Explorer 1.0.1](docs/images/nova1.0.1.webp)
+![Folder Size Explorer 1.0.2](../assets/folder-size-explorer-1.0.2.webp)
 
 Folder Size Explorer is a proprietary desktop app for Windows x64 that combines file browsing with recursive folder-size calculation, a Chrome-style bookmark bar, treemap, tabs, multiple view modes, and FTP/FTPS.
 
@@ -8,36 +8,36 @@ This document is intended for the public releases repository. Source code is pri
 
 ## Status
 
-The latest public version is `1.0.0`. Version `1.0.1` is not published yet. Do not download `OLD`, Debug, or third-party mirror builds.
+The draft version being prepared for the official public channel is `1.0.2`. Download only versioned assets from the official GitHub Releases page; do not download `OLD`, Debug, or third-party mirror builds.
 
 ## Official downloads
 
 - GitHub Releases: <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases>
 - GRCX website: <https://www.grcx.com.br/>
 
-Every public release, including pre-releases, must include a versioned ZIP, SHA-256 checksum, valid Authenticode signature, and legal documentation.
+Every public release must include a versioned distribution asset, SHA-256 checksum, valid Authenticode signature, and current legal documentation.
 
 ## Screenshots
 
 ### Details, treemap, and bookmark bar
 
-![Details view](docs/images/nova1.0.1.webp)
+![Details view](../assets/folder-size-explorer.webp)
 
 ### Dual pane
 
-![Dual pane](docs/images/tela02.webp)
+![Dual pane](../assets/dual-pane.webp)
 
 ### Columns view
 
-![Columns view](docs/images/tela03.webp)
+![Columns view with file preview](../assets/folder-size-explorer-1.0.2.webp)
 
 ### Grid view
 
-![Grid view](docs/images/tela04.webp)
+![Grid view](../assets/grid.webp)
 
 ### FTP connection
 
-![FTP connection](docs/images/tela05.webp)
+![FTP connection](../assets/ftp-connection.webp)
 
 ## Platform
 
@@ -56,6 +56,8 @@ Compatibility by Windows edition/build is described in the corresponding release
 - tabs, recents, and a **Chrome-style bookmark bar** (folders/groups, custom icons, overflow);
 - name search in the current folder and subfolders;
 - local file operations and drag-and-drop;
+- local previews for images, SVG, paginated PDF, video, Word, and PowerPoint files;
+- on-demand Grid thumbnails with a bounded memory cache;
 - CSV/JSON export and size comparison;
 - UI in 21 cultures; and
 - FTP/FTPS browse and local↔remote transfers.

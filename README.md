@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/badge/version-1.0.1-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="version" src="https://img.shields.io/badge/version-1.0.2-11b3ad?style=for-the-badge&labelColor=111" />
   <img alt="license" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
   <img alt="platform" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
 </p>
@@ -45,22 +45,22 @@
 </p>
 
 <p align="center">
-  <img src="assets/folder-size-explorer.webp" alt="Folder Size Explorer — Details view, treemap, and bookmark bar" width="100%"><br>
-  <em>Folder Size Explorer on Windows 11.</em>
+  <img src="assets/folder-size-explorer-1.0.2.webp" alt="Folder Size Explorer — Columns view with file preview" width="100%"><br>
+  <em>Columns view with file preview on Windows 11.</em>
 </p>
 
 ## Download
 
 - [Download the latest release](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Current version: `1.0.1`
-- Asset: `FolderSizeExplorer-1.0.1-win-x64.exe`
+- Current version: `1.0.2`
+- Asset: `FolderSizeExplorer-1.0.2-win-x64.exe`
 - Target: Windows 10/11 x64
 
 The portable executable is self-contained and does not require a separate .NET installation.
 
 ## Installation
 
-1. Download `FolderSizeExplorer-1.0.1-win-x64.exe` from the official release page.
+1. Download `FolderSizeExplorer-1.0.2-win-x64.exe` from the official release page.
 2. Optionally verify its SHA-256 checksum against the checksum published with the release.
 3. Move the executable to a local folder and run it.
 
@@ -89,18 +89,20 @@ The application runs as the current user and does not automatically request admi
 - Tabs, recents, and a **Chrome-style bookmark bar** (folders/groups, custom icons, overflow)
 - Local and recursive filename search
 - Local file operations and drag-and-drop
+- Local previews for images, SVG, PDF, video, Word, and PowerPoint files
 - CSV/JSON export and size comparison
 - Interface available in 21 locales
 - XInput gamepad navigation aids
 - **FTP/FTPS**: browse, upload, download, and local↔remote transfers  
   (Automatic security tries FTPS first, then plain FTP)
 
-## What is new in 1.0.1
+## What is new in 1.0.2
 
-- Chrome-style bookmark bar (idea suggested by [u/testednation](https://www.reddit.com/user/testednation/))
-- Full FTP/FTPS operations (no longer browse-only)
-- Automatic FTP security mode and clearer connection UI
-- Safer startup: missing/slow/FTP last paths open **This PC**
+- Preview pane support for images, SVG, paginated PDF, video, DOCX, and PowerPoint files
+- Fast local rendering of the first DOCX page and isolated capture of the first PowerPoint slide
+- On-demand Grid thumbnails with a bounded memory cache; large videos use a static thumbnail
+- Sharper application icons from the Windows Shell in Grid view
+- Columns view keeps folders first and sorts items by size in descending order
 
 See [CHANGELOG.md](CHANGELOG.md) for the full list.
 

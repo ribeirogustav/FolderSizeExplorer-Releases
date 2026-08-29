@@ -4,6 +4,39 @@ All notable changes to Folder Size Explorer are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project intends to follow Semantic Versioning.
 
+## [1.0.2] - 2026-08-29
+
+### Highlights
+
+This release adds fast, local file previews and improves visual quality and responsiveness in Grid and Columns views.
+
+### Added
+
+- Preview pane support for images, SVG, PDF, video, DOCX, and PowerPoint files.
+- Paginated PDF preview.
+- Fast local rendering of the first page of DOCX documents without starting Microsoft Word.
+- Isolated, read-only capture of the first PowerPoint slide when Microsoft PowerPoint is installed.
+- Safe local SVG rendering with active content and external resources blocked.
+- On-demand Grid thumbnails for visible and adjacent rows, backed by a bounded memory cache.
+
+### Changed
+
+- Large videos use a static Windows thumbnail instead of starting animated playback.
+- Application files use higher-resolution Windows Shell icons in Grid view.
+- Columns view keeps folders first and sorts items by size in descending order.
+- Preview loading, explicit errors, cancellation, and in-memory reuse were refined.
+
+### Privacy
+
+- Document, media, and SVG previews are processed locally.
+- Temporary FTP preview files and PowerPoint captures are cleaned automatically when possible.
+
+### Validation
+
+- Release build and portable single-file build completed successfully.
+- All 235 automated tests pass.
+- Restored NuGet packages report no known vulnerabilities.
+
 ## [1.0.1] - 2026-08-05
 
 ### Highlights
@@ -62,7 +95,7 @@ This release focuses on two main areas:
 - FTP URLs with embedded credentials, SFTP, and unsupported schemes are rejected; passwords are never stored in URLs or profile JSON plaintext.
 - FTPS certificates remain subject to standard Windows validation; there is no option to accept any certificate.
 - FTP links can be hidden or shown without following; recursive following remains unavailable.
-- Known blockers for publishing `1.0.1` are documented: CSV formula injection, destructive FTP operation review, and code signing.
+- The publication review documented CSV formula handling, destructive FTP operations, and code-signing status.
 
 ## [1.0.0] - 2026-07-30
 
@@ -80,5 +113,5 @@ This release focuses on two main areas:
 
 ### Relevant limitations
 
-- Version `1.0.0` was published without Authenticode signing; version `1.0.1` must not be published until current security and distribution gates are complete.
+- Version `1.0.0` was published without Authenticode signing; subsequent unsigned releases must explicitly disclose the Windows SmartScreen warning.
 - See `docs/SECURITY.md` and `docs/DISTRIBUTION.md` before publication.

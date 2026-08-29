@@ -148,7 +148,7 @@ Uma release estável só pode ser publicada quando:
 14. direitos/autorização dos assets incorporados forem documentados; e
 15. o link no site apontar para o artefato correto.
 
-## 9. Bloqueadores atuais da primeira release oficial
+## 9. Bloqueadores atuais da próxima release oficial
 
 Conforme a revisão atual:
 
@@ -156,7 +156,7 @@ Conforme a revisão atual:
 - FTP sem criptografia permanece disponível por compatibilidade, com aviso explícito na interface;
 - CSV permite formula injection;
 - não há certificado/configuração Authenticode; e
-- avisos completos de terceiros ainda precisam ser empacotados e verificados.
+- avisos de terceiros foram atualizados para o runtime atual, mas ainda precisam ser empacotados e comparados com a publicação final.
 
 Esses itens devem ser resolvidos antes de qualquer release pública, estável ou pré-release. Enquanto permanecerem, builds só podem circular de forma privada para correção e validação controlada. Uma advertência no README não substitui correção.
 

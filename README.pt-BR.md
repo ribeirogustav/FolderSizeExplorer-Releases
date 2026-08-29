@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="versão" src="https://img.shields.io/badge/version-1.0.1-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="versão" src="https://img.shields.io/badge/version-1.0.2-11b3ad?style=for-the-badge&labelColor=111" />
   <img alt="licença" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
   <img alt="plataforma" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
 </p>
@@ -45,22 +45,22 @@
 </p>
 
 <p align="center">
-  <img src="assets/folder-size-explorer.webp" alt="Folder Size Explorer — visualização Detalhes, treemap e barra de favoritos" width="100%"><br>
-  <em>Folder Size Explorer no Windows 11.</em>
+  <img src="assets/folder-size-explorer-1.0.2.webp" alt="Folder Size Explorer — visualização em Colunas com pré-visualização de arquivo" width="100%"><br>
+  <em>Visualização em Colunas com pré-visualização de arquivo no Windows 11.</em>
 </p>
 
 ## Download
 
 - [Baixar a release mais recente](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Versão atual: `1.0.1`
-- Arquivo: `FolderSizeExplorer-1.0.1-win-x64.exe`
+- Versão atual: `1.0.2`
+- Arquivo: `FolderSizeExplorer-1.0.2-win-x64.exe`
 - Plataforma: Windows 10/11 x64
 
 O executável portable é self-contained e não exige instalação separada do .NET.
 
 ## Instalação
 
-1. Baixe `FolderSizeExplorer-1.0.1-win-x64.exe` na página oficial de releases.
+1. Baixe `FolderSizeExplorer-1.0.2-win-x64.exe` na página oficial de releases.
 2. Opcionalmente confira o SHA-256 com o arquivo publicado na release.
 3. Coloque o EXE em uma pasta local e execute.
 
@@ -89,18 +89,20 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - Abas, recentes e **barra de favoritos estilo Chrome** (pastas/grupos, ícones, overflow)
 - Busca por nome na pasta e em subpastas
 - Operações locais e drag-and-drop
+- Pré-visualizações locais de imagens, SVG, PDF, vídeo, Word e PowerPoint
 - Exportação CSV/JSON e comparação de tamanho
 - Interface em 21 idiomas
 - Atalhos de navegação com gamepad XInput
 - **FTP/FTPS**: navegar, enviar, baixar e transferir local↔remoto  
   (modo Automático tenta FTPS e, se falhar, usa FTP)
 
-## Novidades da 1.0.1
+## Novidades da 1.0.2
 
-- Barra de favoritos estilo Chrome (sugestão de [u/testednation](https://www.reddit.com/user/testednation/))
-- FTP/FTPS completo (não é mais só listagem)
-- Segurança FTP Automática e janela de conexão mais clara
-- Abertura mais segura: caminhos FTP/ausentes/lentos abrem em **Este Computador**
+- Painel de pré-visualização para imagens, SVG, PDF paginado, vídeo, DOCX e PowerPoint
+- Renderização local rápida da primeira página de DOCX e captura isolada do primeiro slide do PowerPoint
+- Miniaturas da Grade sob demanda e com cache limitado; vídeos grandes usam miniatura estática
+- Ícones de aplicativos mais nítidos, obtidos pelo Windows Shell no modo Grade
+- A visualização em Colunas mantém pastas primeiro e ordena os itens por tamanho decrescente
 
 Veja o [CHANGELOG.md](CHANGELOG.md) para a lista completa.
 

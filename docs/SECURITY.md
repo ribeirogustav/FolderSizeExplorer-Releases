@@ -67,7 +67,7 @@ Third-party services, user-provided FTP servers, Windows, GitHub, payment provid
 
 ## Known security limitations in the audited version
 
-Before the first official public release, treat these as blockers:
+Treat these as blockers for the next official public release:
 
 - CSV export without formula-injection neutralization; and
 - missing Authenticode signing and binary provenance.
