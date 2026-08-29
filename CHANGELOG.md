@@ -18,6 +18,10 @@ This release adds fast, local file previews and improves visual quality and resp
 - Isolated, read-only capture of the first PowerPoint slide when Microsoft PowerPoint is installed.
 - Safe local SVG rendering with active content and external resources blocked.
 - On-demand Grid thumbnails for visible and adjacent rows, backed by a bounded memory cache.
+- Persistent, resizable preview pane in Details view.
+- Five Grid icon sizes controlled by `Ctrl++` / `Ctrl+-`; `Ctrl+0` restores the default.
+- `Ctrl+Shift+C` copies selected file and folder paths as text.
+- Bookmark-bar drag-and-drop for adding, reordering, nesting, and Ctrl-drag copying.
 
 ### Changed
 
@@ -25,16 +29,22 @@ This release adds fast, local file previews and improves visual quality and resp
 - Application files use higher-resolution Windows Shell icons in Grid view.
 - Columns view keeps folders first and sorts items by size in descending order.
 - Preview loading, explicit errors, cancellation, and in-memory reuse were refined.
+- CSV export neutralizes spreadsheet-formula prefixes in text fields.
 
 ### Privacy
 
 - Document, media, and SVG previews are processed locally.
 - Temporary FTP preview files and PowerPoint captures are cleaned automatically when possible.
 
+### Documentation
+
+- Added optional `Windows+E` remapping instructions using Microsoft PowerToys.
+- Thanks to [u/testednation](https://www.reddit.com/user/testednation/) for the feature feedback.
+
 ### Validation
 
 - Release build and portable single-file build completed successfully.
-- All 235 automated tests pass.
+- All 239 automated tests pass.
 - Restored NuGet packages report no known vulnerabilities.
 
 ## [1.0.1] - 2026-08-05

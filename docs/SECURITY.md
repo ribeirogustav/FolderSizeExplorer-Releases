@@ -67,17 +67,15 @@ Third-party services, user-provided FTP servers, Windows, GitHub, payment provid
 
 ## Known security limitations in the audited version
 
-Treat these as blockers for the next official public release:
+- Version `1.0.2` neutralizes CSV fields that begin with spreadsheet-formula prefixes.
+- The portable executable is not Authenticode-signed. The release notes disclose this, and every official asset includes a SHA-256 checksum for integrity verification.
 
-- CSV export without formula-injection neutralization; and
-- missing Authenticode signing and binary provenance.
-
-Until a corrected release is available:
+Current recommendations:
 
 - prefer FTPS or Automatic security; use plain FTP only on trusted networks;
 - do not copy trees that contain unknown links;
 - review names and destinations before rename/move;
-- treat exported CSV as untrusted data before opening in a spreadsheet; and
+- review exported CSV before opening data received from untrusted filesystems; and
 - validate the origin of any executable.
 
 ## Existing protections

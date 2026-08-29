@@ -8,7 +8,7 @@ This document is intended for the public releases repository. Source code is pri
 
 ## Status
 
-The draft version being prepared for the official public channel is `1.0.2`. Download only versioned assets from the official GitHub Releases page; do not download `OLD`, Debug, or third-party mirror builds.
+The latest public version is `1.0.2`. Download only versioned assets from the official GitHub Releases page; do not download `OLD`, Debug, or third-party mirror builds.
 
 ## Official downloads
 
@@ -58,6 +58,8 @@ Compatibility by Windows edition/build is described in the corresponding release
 - local file operations and drag-and-drop;
 - local previews for images, SVG, paginated PDF, video, Word, and PowerPoint files;
 - on-demand Grid thumbnails with a bounded memory cache;
+- persistent, resizable preview pane in Details view;
+- adjustable Grid icon sizes and a keyboard shortcut for copying selected paths;
 - CSV/JSON export and size comparison;
 - UI in 21 cultures; and
 - FTP/FTPS browse and local↔remote transfers.

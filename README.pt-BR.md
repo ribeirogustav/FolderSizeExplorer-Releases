@@ -90,6 +90,8 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - Busca por nome na pasta e em subpastas
 - Operações locais e drag-and-drop
 - Pré-visualizações locais de imagens, SVG, PDF, vídeo, Word e PowerPoint
+- Painel de pré-visualização persistente e redimensionável no modo Detalhes
+- Tamanhos ajustáveis dos ícones da Grade com `Ctrl++`, `Ctrl+-` e `Ctrl+0`
 - Exportação CSV/JSON e comparação de tamanho
 - Interface em 21 idiomas
 - Atalhos de navegação com gamepad XInput
@@ -103,8 +105,19 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - Miniaturas da Grade sob demanda e com cache limitado; vídeos grandes usam miniatura estática
 - Ícones de aplicativos mais nítidos, obtidos pelo Windows Shell no modo Grade
 - A visualização em Colunas mantém pastas primeiro e ordena os itens por tamanho decrescente
+- Painel de pré-visualização persistente e redimensionável no modo Detalhes
+- Zoom dos ícones da Grade com `Ctrl++`, `Ctrl+-` e `Ctrl+0`
+- `Ctrl+Shift+C` copia os caminhos selecionados como texto
+- Drag-and-drop na barra de favoritos para adicionar, reordenar, agrupar e copiar com `Ctrl`
+- A exportação CSV neutraliza prefixos que poderiam ser interpretados como fórmulas
+
+Agradecimento a [u/testednation](https://www.reddit.com/user/testednation/) pelas sugestões.
 
 Veja o [CHANGELOG.md](CHANGELOG.md) para a lista completa.
+
+### Remapeamento opcional de Windows+E
+
+O Windows reserva `Windows+E` para o Explorador de Arquivos, portanto o Folder Size Explorer não altera esse atalho do sistema. Para remapeá-lo voluntariamente, use o [PowerToys Keyboard Manager](https://learn.microsoft.com/windows/powertoys/keyboard-manager) da Microsoft, associe `Windows+E` à ação **Start App** e selecione `FolderSizeExplorer.exe`. O PowerToys precisa permanecer em execução para o remapeamento funcionar.
 
 ## Arquitetura
 

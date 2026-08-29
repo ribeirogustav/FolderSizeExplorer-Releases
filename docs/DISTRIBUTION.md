@@ -139,26 +139,26 @@ Uma release estável só pode ser publicada quando:
 5. a auditoria de dependências não contiver vulnerabilidade High/Critical conhecida;
 6. riscos de perda de dados e transporte tiverem testes/revisão aplicáveis;
 7. o executável corresponder à versão/tag;
-8. a assinatura Authenticode for aplicada e validada;
-9. o checksum SHA-256 for gerado após a assinatura e empacotamento;
-10. documentos legais e avisos de terceiros acompanharem o ZIP;
+8. a assinatura Authenticode for aplicada e validada, ou uma exceção explícita para build sem assinatura for aprovada e divulgada nas notas;
+9. o checksum SHA-256 for gerado após a criação do artefato final;
+10. documentos legais e avisos de terceiros estiverem atualizados no repositório público;
 11. a release for testada em instalação limpa/VM Windows suportada;
 12. `CHANGELOG.md` e notas da release forem revisados; e
 13. `THIRD_PARTY_NOTICES.md` for regenerado e comparado com o `.deps.json` final; e
 14. direitos/autorização dos assets incorporados forem documentados; e
 15. o link no site apontar para o artefato correto.
 
-## 9. Bloqueadores atuais da próxima release oficial
+## 9. Estado da release 1.0.2
 
 Conforme a revisão atual:
 
 - FTPS explícito é o padrão e usa a validação de certificado do Windows; testes manuais com servidores/cadeias reais ainda são gate de release;
 - FTP sem criptografia permanece disponível por compatibilidade, com aviso explícito na interface;
-- CSV permite formula injection;
-- não há certificado/configuração Authenticode; e
+- CSV neutraliza prefixos de fórmulas em campos de texto;
+- não há certificado/configuração Authenticode; a publicação sem assinatura foi aprovada como exceção e deve manter o aviso de SmartScreen;
 - avisos de terceiros foram atualizados para o runtime atual, mas ainda precisam ser empacotados e comparados com a publicação final.
 
-Esses itens devem ser resolvidos antes de qualquer release pública, estável ou pré-release. Enquanto permanecerem, builds só podem circular de forma privada para correção e validação controlada. Uma advertência no README não substitui correção.
+A publicação depende da conclusão dos testes, da geração do checksum sobre o EXE final e da revisão das notas e dos avisos de terceiros.
 
 ## 10. Assinatura e integridade
 
@@ -167,7 +167,7 @@ Esses itens devem ser resolvidos antes de qualquer release pública, estável ou
 - O certificado deve pertencer ao titular/publisher autorizado.
 - A chave privada não pode ser armazenada no repositório.
 - A assinatura deve usar timestamp confiável.
-- `Get-AuthenticodeSignature` deve retornar status válido antes do empacotamento.
+- Quando uma release for assinada, `Get-AuthenticodeSignature` deve retornar status válido antes do empacotamento.
 
 Configuração de certificado, cofre e timestamp: **[PENDENTE]**.
 

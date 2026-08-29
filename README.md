@@ -90,6 +90,8 @@ The application runs as the current user and does not automatically request admi
 - Local and recursive filename search
 - Local file operations and drag-and-drop
 - Local previews for images, SVG, PDF, video, Word, and PowerPoint files
+- Persistent, resizable preview pane in Details view
+- Adjustable Grid icon sizes with `Ctrl++`, `Ctrl+-`, and `Ctrl+0`
 - CSV/JSON export and size comparison
 - Interface available in 21 locales
 - XInput gamepad navigation aids
@@ -103,8 +105,19 @@ The application runs as the current user and does not automatically request admi
 - On-demand Grid thumbnails with a bounded memory cache; large videos use a static thumbnail
 - Sharper application icons from the Windows Shell in Grid view
 - Columns view keeps folders first and sorts items by size in descending order
+- Persistent, resizable preview pane in Details view
+- Grid icon zoom with `Ctrl++`, `Ctrl+-`, and `Ctrl+0`
+- `Ctrl+Shift+C` copies selected paths as text
+- Bookmark-bar drag-and-drop for adding, reordering, nesting, and Ctrl-drag copying
+- CSV export neutralizes spreadsheet-formula prefixes in text fields
+
+Thanks to [u/testednation](https://www.reddit.com/user/testednation/) for the feature feedback.
 
 See [CHANGELOG.md](CHANGELOG.md) for the full list.
+
+### Optional Windows+E remap
+
+Windows reserves `Windows+E` for File Explorer, so Folder Size Explorer does not modify that system shortcut. To remap it voluntarily, use Microsoft [PowerToys Keyboard Manager](https://learn.microsoft.com/windows/powertoys/keyboard-manager), map `Windows+E` to **Start App**, and select `FolderSizeExplorer.exe`. PowerToys must remain running for the remap to work.
 
 ## Architecture
 
