@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="versão" src="https://img.shields.io/badge/version-1.0.2-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="versão" src="https://img.shields.io/badge/version-1.0.3-11b3ad?style=for-the-badge&labelColor=111" />
   <img alt="licença" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
   <img alt="plataforma" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
 </p>
@@ -52,15 +52,15 @@
 ## Download
 
 - [Baixar a release mais recente](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Versão atual: `1.0.2`
-- Arquivo: `FolderSizeExplorer-1.0.2-win-x64.exe`
+- Versão atual: `1.0.3`
+- Arquivo: `FolderSizeExplorer-1.0.3-win-x64.exe`
 - Plataforma: Windows 10/11 x64
 
 O executável portable é self-contained e não exige instalação separada do .NET.
 
 ## Instalação
 
-1. Baixe `FolderSizeExplorer-1.0.2-win-x64.exe` na página oficial de releases.
+1. Baixe `FolderSizeExplorer-1.0.3-win-x64.exe` na página oficial de releases.
 2. Opcionalmente confira o SHA-256 com o arquivo publicado na release.
 3. Coloque o EXE em uma pasta local e execute.
 
@@ -89,7 +89,7 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - Abas, recentes e **barra de favoritos estilo Chrome** (pastas/grupos, ícones, overflow)
 - Busca por nome na pasta e em subpastas
 - Operações locais e drag-and-drop
-- Pré-visualizações locais de imagens, SVG, PDF, vídeo, Word e PowerPoint
+- Pré-visualizações locais de texto, configuração, código-fonte, imagens incluindo WebP, SVG, PDF, vídeo, Word e PowerPoint
 - Painel de pré-visualização persistente e redimensionável no modo Detalhes
 - Tamanhos ajustáveis dos ícones da Grade com `Ctrl++`, `Ctrl+-` e `Ctrl+0`
 - Exportação CSV/JSON e comparação de tamanho
@@ -98,18 +98,15 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - **FTP/FTPS**: navegar, enviar, baixar e transferir local↔remoto  
   (modo Automático tenta FTPS e, se falhar, usa FTP)
 
-## Novidades da 1.0.2
+## Novidades da 1.0.3
 
-- Painel de pré-visualização para imagens, SVG, PDF paginado, vídeo, DOCX e PowerPoint
-- Renderização local rápida da primeira página de DOCX e captura isolada do primeiro slide do PowerPoint
-- Miniaturas da Grade sob demanda e com cache limitado; vídeos grandes usam miniatura estática
-- Ícones de aplicativos mais nítidos, obtidos pelo Windows Shell no modo Grade
-- A visualização em Colunas mantém pastas primeiro e ordena os itens por tamanho decrescente
-- Painel de pré-visualização persistente e redimensionável no modo Detalhes
-- Zoom dos ícones da Grade com `Ctrl++`, `Ctrl+-` e `Ctrl+0`
-- `Ctrl+Shift+C` copia os caminhos selecionados como texto
-- Drag-and-drop na barra de favoritos para adicionar, reordenar, agrupar e copiar com `Ctrl`
-- A exportação CSV neutraliza prefixos que poderiam ser interpretados como fórmulas
+- Pré-visualizações selecionáveis de texto, configurações, marcação e código-fonte, limitadas a 256 KB ou 5.000 linhas
+- Reprodução direta de vídeo no preview Modern por padrão; proxies adaptativos em cache continuam disponíveis no Classic e nas Configurações
+- Decodificação local de WebP e correção de escala/alinhamento para SVGs com dimensões explícitas e `viewBox`
+- Bandeiras SVG circulares no seletor de idioma, incluindo pares para idiomas de grandes regiões diferentes
+- Fonte Noto Nastaliq Urdu incorporada e cobertura corrigida da interface em urdu
+- Persistência da posição da janela e da ordem/largura das colunas em Detalhes
+- Filtro com seleção múltipla e agrupamento persistente por tipo em todos os modos de visualização
 
 Agradecimento a [u/testednation](https://www.reddit.com/user/testednation/) pelas sugestões.
 

@@ -1,6 +1,6 @@
 # Folder Size Explorer
 
-![Folder Size Explorer 1.0.2](../assets/folder-size-explorer-1.0.2.webp)
+![Folder Size Explorer 1.0.2](https://raw.githubusercontent.com/ribeirogustav/FolderSizeExplorer-Releases/main/assets/folder-size-explorer-1.0.2.webp)
 
 Folder Size Explorer is a proprietary desktop app for Windows x64 that combines file browsing with recursive folder-size calculation, a Chrome-style bookmark bar, treemap, tabs, multiple view modes, and FTP/FTPS.
 
@@ -8,36 +8,36 @@ This document is intended for the public releases repository. Source code is pri
 
 ## Status
 
-The latest public version is `1.0.2`. Download only versioned assets from the official GitHub Releases page; do not download `OLD`, Debug, or third-party mirror builds.
+The current release version is `1.0.3`. Download only versioned assets from the official GitHub Releases page; do not download `OLD`, Debug, or third-party mirror builds.
 
 ## Official downloads
 
 - GitHub Releases: <https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases>
 - GRCX website: <https://www.grcx.com.br/>
 
-Every public release must include a versioned distribution asset, SHA-256 checksum, valid Authenticode signature, and current legal documentation.
+Every public release must include a versioned distribution asset, SHA-256 checksum, current legal documentation, and either a valid Authenticode signature or an explicit unsigned-build disclosure.
 
 ## Screenshots
 
 ### Details, treemap, and bookmark bar
 
-![Details view](../assets/folder-size-explorer.webp)
+![Details view](https://raw.githubusercontent.com/ribeirogustav/FolderSizeExplorer-Releases/main/assets/folder-size-explorer.webp)
 
 ### Dual pane
 
-![Dual pane](../assets/dual-pane.webp)
+![Dual pane](https://raw.githubusercontent.com/ribeirogustav/FolderSizeExplorer-Releases/main/assets/dual-pane.webp)
 
 ### Columns view
 
-![Columns view with file preview](../assets/folder-size-explorer-1.0.2.webp)
+![Columns view with file preview](https://raw.githubusercontent.com/ribeirogustav/FolderSizeExplorer-Releases/main/assets/folder-size-explorer-1.0.2.webp)
 
 ### Grid view
 
-![Grid view](../assets/grid.webp)
+![Grid view](https://raw.githubusercontent.com/ribeirogustav/FolderSizeExplorer-Releases/main/assets/grid.webp)
 
 ### FTP connection
 
-![FTP connection](../assets/ftp-connection.webp)
+![FTP connection](https://raw.githubusercontent.com/ribeirogustav/FolderSizeExplorer-Releases/main/assets/ftp-connection.webp)
 
 ## Platform
 
@@ -56,7 +56,7 @@ Compatibility by Windows edition/build is described in the corresponding release
 - tabs, recents, and a **Chrome-style bookmark bar** (folders/groups, custom icons, overflow);
 - name search in the current folder and subfolders;
 - local file operations and drag-and-drop;
-- local previews for images, SVG, paginated PDF, video, Word, and PowerPoint files;
+- local previews for text, WebP and other images, SVG, paginated PDF, video, Word, and PowerPoint files;
 - on-demand Grid thumbnails with a bounded memory cache;
 - persistent, resizable preview pane in Details view;
 - adjustable Grid icon sizes and a keyboard shortcut for copying selected paths;

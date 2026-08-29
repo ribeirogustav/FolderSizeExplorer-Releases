@@ -4,6 +4,44 @@ All notable changes to Folder Size Explorer are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project intends to follow Semantic Versioning.
 
+## [1.0.3] - 2026-08-29
+
+### Added
+
+- Bundled the official Noto Nastaliq Urdu variable font and completed missing Urdu interface messages.
+- Added multi-select filtering and persistent grouping by file type across all view modes.
+- Added persistence for main-window placement and Details column order and widths.
+- Added circular SVG flags to the language selector, including paired flags for languages shared across major regions.
+- Added selectable previews for text, configuration, markup, and source-code files, limited to 256 KB or 5,000 lines.
+- Added partial FTP text reads so large remote text files do not need to be downloaded in full.
+- Added local WebP previews and a setting to enable lightweight video proxies in Modern mode.
+
+### Changed
+
+- Modern video previews open the original file directly by default; Classic mode uses cached, silent 10-second H.264 proxies at the smallest useful 360p, 540p, or 720p tier.
+- Unsupported video codecs fall back to a static Windows thumbnail without bundling FFmpeg.
+- SVG previews with explicit dimensions and a `viewBox` now fill and align correctly in the bottom-right preview.
+- Window restoration now handles full-width placements on monitors with negative fractional coordinates without a startup error.
+- Text previews now fill the available Classic preview pane while retaining the compact floating size in Modern mode.
+- Controller help now fades after 10 seconds; Escape dismisses Modern previews until an explicit file click or selection change.
+- Language flags now use a true circular clip, and Dark/Light theme choices include moon/sun icons.
+- Urdu uses the embedded font at startup and after live language changes, with adjusted Window and DataGrid metrics.
+- Invalid or off-screen saved window layouts are repaired when monitor configuration changes.
+- Application and status-bar versions were updated to `1.0.3`.
+
+### Privacy and licensing
+
+- Text and video previews are processed locally. Video proxies are stored in a bounded 128 MB local cache and expire after seven days.
+- Added Circle Flags source commit, per-file SHA-256 provenance, MIT license, and generated third-party notice.
+- Added Noto Nastaliq Urdu source hash and SIL Open Font License 1.1 notice.
+
+### Validation
+
+- Release and portable single-file builds completed successfully.
+- A functional media test produced a silent `640×358`, 10-second proxy from an `854×480` video.
+- All 299 automated tests pass.
+- Restored NuGet packages report no known vulnerabilities.
+
 ## [1.0.2] - 2026-08-29
 
 ### Highlights

@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/badge/version-1.0.2-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="version" src="https://img.shields.io/badge/version-1.0.3-11b3ad?style=for-the-badge&labelColor=111" />
   <img alt="license" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
   <img alt="platform" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
 </p>
@@ -52,15 +52,15 @@
 ## Download
 
 - [Download the latest release](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Current version: `1.0.2`
-- Asset: `FolderSizeExplorer-1.0.2-win-x64.exe`
+- Current version: `1.0.3`
+- Asset: `FolderSizeExplorer-1.0.3-win-x64.exe`
 - Target: Windows 10/11 x64
 
 The portable executable is self-contained and does not require a separate .NET installation.
 
 ## Installation
 
-1. Download `FolderSizeExplorer-1.0.2-win-x64.exe` from the official release page.
+1. Download `FolderSizeExplorer-1.0.3-win-x64.exe` from the official release page.
 2. Optionally verify its SHA-256 checksum against the checksum published with the release.
 3. Move the executable to a local folder and run it.
 
@@ -89,7 +89,7 @@ The application runs as the current user and does not automatically request admi
 - Tabs, recents, and a **Chrome-style bookmark bar** (folders/groups, custom icons, overflow)
 - Local and recursive filename search
 - Local file operations and drag-and-drop
-- Local previews for images, SVG, PDF, video, Word, and PowerPoint files
+- Local previews for text, configuration, source code, images including WebP, SVG, PDF, video, Word, and PowerPoint files
 - Persistent, resizable preview pane in Details view
 - Adjustable Grid icon sizes with `Ctrl++`, `Ctrl+-`, and `Ctrl+0`
 - CSV/JSON export and size comparison
@@ -98,18 +98,15 @@ The application runs as the current user and does not automatically request admi
 - **FTP/FTPS**: browse, upload, download, and local↔remote transfers  
   (Automatic security tries FTPS first, then plain FTP)
 
-## What is new in 1.0.2
+## What is new in 1.0.3
 
-- Preview pane support for images, SVG, paginated PDF, video, DOCX, and PowerPoint files
-- Fast local rendering of the first DOCX page and isolated capture of the first PowerPoint slide
-- On-demand Grid thumbnails with a bounded memory cache; large videos use a static thumbnail
-- Sharper application icons from the Windows Shell in Grid view
-- Columns view keeps folders first and sorts items by size in descending order
-- Persistent, resizable preview pane in Details view
-- Grid icon zoom with `Ctrl++`, `Ctrl+-`, and `Ctrl+0`
-- `Ctrl+Shift+C` copies selected paths as text
-- Bookmark-bar drag-and-drop for adding, reordering, nesting, and Ctrl-drag copying
-- CSV export neutralizes spreadsheet-formula prefixes in text fields
+- Selectable previews for text, configuration, markup, and source-code files, bounded to 256 KB or 5,000 lines
+- Direct video playback in Modern preview by default; adaptive cached proxies remain available in Classic mode and through Settings
+- Local WebP decoding and corrected SVG scale/alignment for files with explicit dimensions and a `viewBox`
+- Circular SVG flags in the language selector, with paired flags where a language spans major regions
+- Bundled Noto Nastaliq Urdu font and corrected Urdu interface coverage
+- Persistent window placement and Details column order/widths
+- Multi-select file-type filtering and persistent grouping in all view modes
 
 Thanks to [u/testednation](https://www.reddit.com/user/testednation/) for the feature feedback.
 

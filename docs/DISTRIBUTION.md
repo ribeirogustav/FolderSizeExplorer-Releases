@@ -47,7 +47,7 @@ Usar versionamento semântico `MAJOR.MINOR.PATCH`:
 
 - `MAJOR`: mudança incompatível relevante, novo modelo de dados/uso ou alteração material de licença.
 - `MINOR`: funcionalidade compatível adicionada.
-- `PATCH`: correção compatível, inclusive segurança.
+- `PATCH`: melhoria incremental ou correção compatível, inclusive segurança.
 
 Releases de teste podem usar sufixos como `-beta.1` e devem ser marcadas como **pre-release** no GitHub.
 
@@ -148,17 +148,19 @@ Uma release estável só pode ser publicada quando:
 14. direitos/autorização dos assets incorporados forem documentados; e
 15. o link no site apontar para o artefato correto.
 
-## 9. Estado da release 1.0.2
+## 9. Estado da release 1.0.3
 
 Conforme a revisão atual:
 
-- FTPS explícito é o padrão e usa a validação de certificado do Windows; testes manuais com servidores/cadeias reais ainda são gate de release;
+- Segurança Automática é o padrão: tenta FTPS explícito com validação de certificado do Windows e só então permite fallback para FTP simples com aviso; a validação manual aplicável com FTP/FTPS foi confirmada para esta release;
 - FTP sem criptografia permanece disponível por compatibilidade, com aviso explícito na interface;
 - CSV neutraliza prefixos de fórmulas em campos de texto;
+- pré-visualizações de texto são limitadas e proxies de vídeo usam cache local limitado, sem áudio e sem serviço externo;
+- fontes e bandeiras incorporadas possuem licença, origem e hashes documentados;
 - não há certificado/configuração Authenticode; a publicação sem assinatura foi aprovada como exceção e deve manter o aviso de SmartScreen;
-- avisos de terceiros foram atualizados para o runtime atual, mas ainda precisam ser empacotados e comparados com a publicação final.
+- avisos de terceiros foram atualizados para o runtime atual.
 
-A publicação depende da conclusão dos testes, da geração do checksum sobre o EXE final e da revisão das notas e dos avisos de terceiros.
+A validação manual externa em ambiente Windows limpo e os testes aplicáveis com servidores FTP/FTPS foram confirmados pelo titular em 2026-08-29.
 
 ## 10. Assinatura e integridade
 
@@ -184,7 +186,7 @@ O hash publicado no GitHub e no site deve ser idêntico.
 3. Executar restore, build, testes e auditoria.
 4. Publicar em diretório limpo para `win-x64`, self-contained e single-file.
 5. Verificar versão do executável.
-6. Assinar o EXE e validar a assinatura.
+6. Assinar o EXE e validar a assinatura, ou aprovar e documentar explicitamente a exceção para release estável sem assinatura.
 7. Executar `.\generate-third-party-notices.ps1` e revisar o resultado.
 8. Montar ZIP com documentos e avisos, usando `PUBLIC_README.md` como `README.md` público.
 9. Gerar checksum.

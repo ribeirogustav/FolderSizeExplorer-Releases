@@ -117,12 +117,12 @@ Every public release, including pre-releases, must include:
 
 - a versioned executable or ZIP;
 - SHA-256 checksum;
-- valid Authenticode signature;
+- valid Authenticode signature or, for a stable release, an explicitly approved unsigned-build exception disclosed in the release notes;
 - release notes;
 - license/EULA and third-party notices; and
 - a link to this policy.
 
-Do not distribute as an official release any binary that fails the gates in [`DISTRIBUTION.md`](DISTRIBUTION.md).
+Do not distribute as an official release any binary that fails the gates in [`DISTRIBUTION.md`](DISTRIBUTION.md) without an exception explicitly allowed, approved, and disclosed under that policy.
 
 ## Credits
 

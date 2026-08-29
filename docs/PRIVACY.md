@@ -24,7 +24,7 @@ Para executar suas funções, o aplicativo pode acessar:
 - estrutura de diretórios;
 - unidades locais, removíveis, ópticas e de rede;
 - seleção e operações solicitadas pelo usuário;
-- conteúdo de imagens, SVGs, PDFs, vídeos, documentos Word e apresentações PowerPoint selecionados, processado localmente para gerar pré-visualizações e miniaturas;
+- conteúdo de textos, configurações, código, imagens, SVGs, PDFs, vídeos, documentos Word e apresentações PowerPoint selecionados, processado localmente para gerar pré-visualizações e miniaturas;
 - preferências de tema, idioma, visualização e filtros; e
 - informações de conexão FTP fornecidas pelo usuário.
 
@@ -37,6 +37,7 @@ O cálculo de tamanho soma metadados e bytes reportados pelo sistema de arquivos
 | Configurações, favoritos, recentes e último caminho | `%AppData%\FolderSizeExplorer\settings.json` | JSON sem criptografia própria; restaura preferências e atalhos |
 | Perfis FTP | `%AppData%\FolderSizeExplorer\ftp-connections.json` | Host, usuário e opções em texto; senha protegida por Windows DPAPI `CurrentUser` |
 | Cache de tamanhos | `%LocalAppData%\FolderSizeExplorer\folder-size-cache.db` | SQLite sem criptografia própria; guarda paths, resultados e timestamps |
+| Cache de pré-visualização de vídeos | `%LocalAppData%\FolderSizeExplorer\video-preview-cache` | Clipes MP4 locais, sem áudio, com até 10 segundos e nomes derivados por hash; limitado a 128 MB |
 | Exports | Caminho escolhido pelo usuário | CSV/JSON podem conter paths completos e mensagens de erro |
 | Clipboard | Clipboard do Windows | Pode conter paths, FileDrop ou identificadores de apoio após ação do usuário |
 | Pré-visualizações FTP | `%TEMP%\FolderSizeExplorer\ftp-preview` | Cópias temporárias limitadas de imagens, PDFs, vídeos e documentos remotos selecionados pelo usuário |
@@ -48,10 +49,12 @@ O SQLite pode criar arquivos auxiliares `-wal` e `-shm`.
 
 - O histórico recente mantém até 15 caminhos.
 - Resultados SQLite deixam de ser reutilizados depois de sete dias, mas linhas expiradas não são apagadas automaticamente na versão atual.
+- Proxies de vídeo deixam de ser mantidos após sete dias ou quando o cache ultrapassa 128 MB; a limpeza ocorre automaticamente por uso mais recente.
 - Não existe botão único para apagar todos os dados locais.
 - O aplicativo tenta remover pré-visualizações FTP ao mudar a seleção ou fechar; arquivos ainda bloqueados ou resíduos de encerramentos inesperados são removidos posteriormente em limpeza automática.
 - Arquivos DOCX são renderizados diretamente pelo aplicativo, sem executar macros. Apresentações PowerPoint são abertas somente para leitura em cópias temporárias, com macros desativadas, para capturar localmente o primeiro slide quando o PowerPoint está instalado.
-- Miniaturas são obtidas localmente pelo Windows Shell; SVGs são renderizados localmente, com conteúdo ativo e recursos externos bloqueados.
+- Textos são lidos localmente até o limite de 256 KB ou 5.000 linhas e não são executados nem interpretados como HTML/Markdown.
+- Miniaturas são obtidas localmente pelo Windows Shell; WebP é decodificado localmente pelo SkiaSharp; SVGs são renderizados localmente, com conteúdo ativo e recursos externos bloqueados; quando usados, proxies de vídeo são transcodificados pelas APIs de mídia do Windows.
 
 Para remover dados gerenciados pelo aplicativo:
 
