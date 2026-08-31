@@ -1,6 +1,6 @@
 # Folder Size Explorer
 
-![Folder Size Explorer 1.0.2](https://raw.githubusercontent.com/ribeirogustav/FolderSizeExplorer-Releases/main/assets/folder-size-explorer-1.0.2.webp)
+![Folder Size Explorer](https://raw.githubusercontent.com/ribeirogustav/FolderSizeExplorer-Releases/main/assets/folder-size-explorer-1.0.2.webp)
 
 Folder Size Explorer is a proprietary desktop app for Windows x64 that combines file browsing with recursive folder-size calculation, a Chrome-style bookmark bar, treemap, tabs, multiple view modes, and FTP/FTPS.
 
@@ -8,7 +8,7 @@ This document is intended for the public releases repository. Source code is pri
 
 ## Status
 
-The current release version is `1.0.3`. Download only versioned assets from the official GitHub Releases page; do not download `OLD`, Debug, or third-party mirror builds.
+The current release version is `1.0.4`. Download only versioned assets from the official GitHub Releases page; do not download `OLD`, Debug, or third-party mirror builds.
 
 ## Official downloads
 
@@ -51,17 +51,15 @@ Compatibility by Windows edition/build is described in the corresponding release
 
 - asynchronous folder-size calculation;
 - local in-memory and SQLite size cache;
-- Details, Columns, Grid, and Dual views;
+- view modes: Details, Columns (Miller/Finder-like), Grid, and Dual pane;
 - treemap of the largest visible items;
 - tabs, recents, and a **Chrome-style bookmark bar** (folders/groups, custom icons, overflow);
 - name search in the current folder and subfolders;
 - local file operations and drag-and-drop;
-- local previews for text, WebP and other images, SVG, paginated PDF, video, Word, and PowerPoint files;
-- on-demand Grid thumbnails with a bounded memory cache;
-- persistent, resizable preview pane in Details view;
-- adjustable Grid icon sizes and a keyboard shortcut for copying selected paths;
+- local previews for text, WebP and other images, SVG, documents, and video;
 - CSV/JSON export and size comparison;
-- UI in 21 cultures; and
+- UI in 21 cultures;
+- XInput gamepad navigation aids; and
 - FTP/FTPS browse and local↔remote transfers.
 
 See the release notes for limitations and fixed/pending risks.

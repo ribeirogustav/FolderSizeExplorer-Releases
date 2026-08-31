@@ -4,6 +4,24 @@ All notable changes to Folder Size Explorer are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project intends to follow Semantic Versioning.
 
+## [1.0.4] - 2026-08-31
+
+### Added
+
+- Added a compact zoom bar from 50% to 250% in 5% steps, with an independently persisted percentage for Details, Columns, Grid, and Dual views.
+- Added `Ctrl` + mouse-wheel zoom, including Precision Touchpad pinch events promoted by Windows.
+
+### Fixed
+
+- Image, document, video, icon, and thumbnail previews no longer appear mirrored in Urdu and other RTL cultures.
+- Grid keyboard navigation now uses the active zoom percentage instead of a fixed item width.
+
+### Validation
+
+- Release and portable single-file builds completed successfully.
+- All 321 automated tests pass.
+- Restored NuGet packages report no known vulnerabilities.
+
 ## [1.0.3] - 2026-08-29
 
 ### Added

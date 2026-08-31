@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="versão" src="https://img.shields.io/badge/version-1.0.3-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="versão" src="https://img.shields.io/badge/version-1.0.4-11b3ad?style=for-the-badge&labelColor=111" />
   <img alt="licença" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
   <img alt="plataforma" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
 </p>
@@ -52,15 +52,15 @@
 ## Download
 
 - [Baixar a release mais recente](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Versão atual: `1.0.3`
-- Arquivo: `FolderSizeExplorer-1.0.3-win-x64.exe`
+- Versão atual: `1.0.4`
+- Arquivo: `FolderSizeExplorer-1.0.4-win-x64.exe`
 - Plataforma: Windows 10/11 x64
 
 O executável portable é self-contained e não exige instalação separada do .NET.
 
 ## Instalação
 
-1. Baixe `FolderSizeExplorer-1.0.3-win-x64.exe` na página oficial de releases.
+1. Baixe `FolderSizeExplorer-1.0.4-win-x64.exe` na página oficial de releases.
 2. Opcionalmente confira o SHA-256 com o arquivo publicado na release.
 3. Coloque o EXE em uma pasta local e execute.
 
@@ -91,24 +91,23 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - Operações locais e drag-and-drop
 - Pré-visualizações locais de texto, configuração, código-fonte, imagens incluindo WebP, SVG, PDF, vídeo, Word e PowerPoint
 - Painel de pré-visualização persistente e redimensionável no modo Detalhes
-- Tamanhos ajustáveis dos ícones da Grade com `Ctrl++`, `Ctrl+-` e `Ctrl+0`
+- Zoom independente de 50% a 250% em Detalhes, Colunas, Grade e Painel duplo, com slider na barra de status, `Ctrl+roda`, `Ctrl++`, `Ctrl+-` e `Ctrl+0`
 - Exportação CSV/JSON e comparação de tamanho
 - Interface em 21 idiomas
 - Atalhos de navegação com gamepad XInput
 - **FTP/FTPS**: navegar, enviar, baixar e transferir local↔remoto  
   (modo Automático tenta FTPS e, se falhar, usa FTP)
 
-## Novidades da 1.0.3
+## Novidades da 1.0.4
 
-- Pré-visualizações selecionáveis de texto, configurações, marcação e código-fonte, limitadas a 256 KB ou 5.000 linhas
-- Reprodução direta de vídeo no preview Modern por padrão; proxies adaptativos em cache continuam disponíveis no Classic e nas Configurações
-- Decodificação local de WebP e correção de escala/alinhamento para SVGs com dimensões explícitas e `viewBox`
-- Bandeiras SVG circulares no seletor de idioma, incluindo pares para idiomas de grandes regiões diferentes
-- Fonte Noto Nastaliq Urdu incorporada e cobertura corrigida da interface em urdu
-- Persistência da posição da janela e da ordem/largura das colunas em Detalhes
-- Filtro com seleção múltipla e agrupamento persistente por tipo em todos os modos de visualização
+- Uma barra compacta agora ajusta ícones, miniaturas, cards e espaçamento das linhas de 50% a 250%, em passos de 5%.
+- Detalhes, Colunas, Grade e Painel duplo mantêm percentuais de zoom independentes.
+- `Ctrl+roda`, eventos de pinça do Precision Touchpad promovidos pelo Windows, `Ctrl++`, `Ctrl+-` e `Ctrl+0` atuam na visualização ativa.
+- Imagens, documentos, vídeos, ícones e miniaturas não são mais espelhados em urdu ou outras interfaces RTL.
+- Modos de lista ampliados carregam ícones de alta resolução do Windows em vez de esticar ícones pequenos.
+- A atualização de miniaturas e a navegação por teclado na Grade agora acompanham o percentual contínuo.
 
-Agradecimento a [u/testednation](https://www.reddit.com/user/testednation/) pelas sugestões.
+Agradecimento aos usuários do Reddit que relataram a ausência do zoom e os previews espelhados em urdu.
 
 Veja o [CHANGELOG.md](CHANGELOG.md) para a lista completa.
 

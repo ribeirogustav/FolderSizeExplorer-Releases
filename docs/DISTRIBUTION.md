@@ -99,7 +99,7 @@ FolderSizeExplorer-<versao>-win-x64.zip
 FolderSizeExplorer-<versao>-win-x64.zip.sha256
 ```
 
-Conteúdo mínimo do ZIP (layout plano no pacote do usuário):
+Conteúdo mínimo do ZIP:
 
 ```text
 FolderSizeExplorer.exe
@@ -115,8 +115,6 @@ OWNERSHIP.md
 METRICS.md
 DISTRIBUTION.md
 ```
-
-No repositório público `FolderSizeExplorer-Releases`, a documentação fica em `docs/` e as imagens/logo em `assets/`. A raiz mantém apenas `README.md`, `README.pt-BR.md`, `LICENSE` e `CHANGELOG.md`. Ao montar o ZIP, copiar os documentos de `docs/` (e `LICENSE`/`CHANGELOG.md` da raiz) para a raiz do pacote.
 
 Não incluir:
 
@@ -148,7 +146,7 @@ Uma release estável só pode ser publicada quando:
 14. direitos/autorização dos assets incorporados forem documentados; e
 15. o link no site apontar para o artefato correto.
 
-## 9. Estado da release 1.0.3
+## 9. Estado da release 1.0.4
 
 Conforme a revisão atual:
 
@@ -156,11 +154,13 @@ Conforme a revisão atual:
 - FTP sem criptografia permanece disponível por compatibilidade, com aviso explícito na interface;
 - CSV neutraliza prefixos de fórmulas em campos de texto;
 - pré-visualizações de texto são limitadas e proxies de vídeo usam cache local limitado, sem áudio e sem serviço externo;
+- conteúdo visual de previews e miniaturas mantém orientação LTR em interfaces RTL;
+- o zoom de 50% a 250% é persistido independentemente por modo de visualização;
 - fontes e bandeiras incorporadas possuem licença, origem e hashes documentados;
-- não há certificado/configuração Authenticode; a publicação sem assinatura foi aprovada como exceção e deve manter o aviso de SmartScreen;
+- não há certificado/configuração Authenticode; a publicação sem assinatura foi aprovada como exceção e deve manter o aviso de SmartScreen; e
 - avisos de terceiros foram atualizados para o runtime atual.
 
-A validação manual externa em ambiente Windows limpo e os testes aplicáveis com servidores FTP/FTPS foram confirmados pelo titular em 2026-08-29.
+A validação automatizada da release 1.0.4 foi concluída em 2026-08-31; validações manuais externas continuam sob responsabilidade do titular antes da publicação final.
 
 ## 10. Assinatura e integridade
 

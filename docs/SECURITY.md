@@ -67,7 +67,7 @@ Third-party services, user-provided FTP servers, Windows, GitHub, payment provid
 
 ## Known security limitations in the audited version
 
-- Version `1.0.2` neutralizes CSV fields that begin with spreadsheet-formula prefixes.
+- Version `1.0.4` neutralizes CSV fields that begin with spreadsheet-formula prefixes.
 - The portable executable is not Authenticode-signed. The release notes disclose this, and every official asset includes a SHA-256 checksum for integrity verification.
 
 Current recommendations:
