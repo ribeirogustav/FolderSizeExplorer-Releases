@@ -146,7 +146,7 @@ Uma release estável só pode ser publicada quando:
 14. direitos/autorização dos assets incorporados forem documentados; e
 15. o link no site apontar para o artefato correto.
 
-## 9. Estado da release 1.0.4
+## 9. Estado da release 1.0.5
 
 Conforme a revisão atual:
 
@@ -160,7 +160,7 @@ Conforme a revisão atual:
 - não há certificado/configuração Authenticode; a publicação sem assinatura foi aprovada como exceção e deve manter o aviso de SmartScreen; e
 - avisos de terceiros foram atualizados para o runtime atual.
 
-A validação automatizada da release 1.0.4 foi concluída em 2026-08-31; validações manuais externas continuam sob responsabilidade do titular antes da publicação final.
+A validação automatizada da release 1.0.5 foi concluída em 2026-11-08; validações manuais externas continuam sob responsabilidade do titular antes da publicação final.
 
 ## 10. Assinatura e integridade
 

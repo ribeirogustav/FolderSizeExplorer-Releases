@@ -8,7 +8,7 @@ This document is intended for the public releases repository. Source code is pri
 
 ## Status
 
-The current release version is `1.0.4`. Download only versioned assets from the official GitHub Releases page; do not download `OLD`, Debug, or third-party mirror builds.
+The current release version is `1.0.5`. Download only versioned assets from the official GitHub Releases page; do not download `OLD`, Debug, or third-party mirror builds.
 
 ## Official downloads
 

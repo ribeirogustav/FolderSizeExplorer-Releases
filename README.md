@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/badge/version-1.0.4-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="version" src="https://img.shields.io/badge/version-1.0.5-11b3ad?style=for-the-badge&labelColor=111" />
   <img alt="license" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
   <img alt="platform" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
 </p>
@@ -52,15 +52,15 @@
 ## Download
 
 - [Download the latest release](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Current version: `1.0.4`
-- Asset: `FolderSizeExplorer-1.0.4-win-x64.exe`
+- Current version: `1.0.5`
+- Asset: `FolderSizeExplorer-1.0.5-win-x64.exe`
 - Target: Windows 10/11 x64
 
 The portable executable is self-contained and does not require a separate .NET installation.
 
 ## Installation
 
-1. Download `FolderSizeExplorer-1.0.4-win-x64.exe` from the official release page.
+1. Download `FolderSizeExplorer-1.0.5-win-x64.exe` from the official release page.
 2. Optionally verify its SHA-256 checksum against the checksum published with the release.
 3. Move the executable to a local folder and run it.
 
@@ -98,16 +98,14 @@ The application runs as the current user and does not automatically request admi
 - **FTP/FTPS**: browse, upload, download, and local↔remote transfers  
   (Automatic security tries FTPS first, then plain FTP)
 
-## What is new in 1.0.4
+## What is new in 1.0.5
 
-- A compact zoom bar now adjusts icons, thumbnails, cards, and row spacing from 50% to 250% in 5% steps.
-- Details, Columns, Grid, and Dual views remember independent zoom percentages.
-- `Ctrl+wheel`, Precision Touchpad pinch events promoted by Windows, `Ctrl++`, `Ctrl+-`, and `Ctrl+0` work on the active file view.
-- Image, document, video, icon, and thumbnail content is no longer mirrored in Urdu or other RTL interfaces.
-- Enlarged list views load high-resolution Windows Shell icons instead of stretching small icons.
-- Grid thumbnail refresh and keyboard navigation now follow the active continuous zoom percentage.
-
-Thanks to the Reddit users who reported the missing zoom control and mirrored Urdu previews.
+- Preserved Windows system regional date and time patterns (System Locale) independently of the selected interface language (Issue #1).
+- Routed local deletions through a dedicated STA Windows Shell worker, ensuring accurate Recycle Bin interaction and per-item status reporting.
+- Corrected deletion context for deep search, column panes, and dual view to prevent operations on stale selections.
+- Improved FTP transfer reliability: Skip and Resume policies preserve destinations without premature deletion, plus file/directory collision handling.
+- Smooth FTP progress reporting and live concurrency limit adjustments during active sessions.
+- Size-cache database operations moved off the UI thread with sequential SQLite transaction ordering.
 
 See [CHANGELOG.md](CHANGELOG.md) for the full list.
 

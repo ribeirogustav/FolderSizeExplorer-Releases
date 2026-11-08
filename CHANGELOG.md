@@ -4,6 +4,23 @@ All notable changes to Folder Size Explorer are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project intends to follow Semantic Versioning.
 
+## [1.0.5] - 2026-11-08
+
+### Fixed
+
+- Preserved system regional date patterns independently of interface language (Issue #1).
+- Corrected deletion context for deep-search results, column panes, and dual view; added per-item summary and an STA recycle-bin worker.
+- Corrected FTP download conflict policies, case-sensitive refresh, cancellation and connection error reporting.
+- Applied live calculation concurrency limits, moved size-cache queries off the UI thread and ordered cache invalidations with writes.
+- Added staged, cancelable local copying and watcher-error refresh handling.
+- Constrained Settings and FTP dialogs to monitor work areas and DPI changes.
+
+### Validation
+
+- Release and portable single-file builds completed successfully.
+- All 348 automated tests pass.
+- Restored NuGet packages report no known vulnerabilities.
+
 ## [1.0.4] - 2026-08-31
 
 ### Added

@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="versão" src="https://img.shields.io/badge/version-1.0.4-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="versão" src="https://img.shields.io/badge/version-1.0.5-11b3ad?style=for-the-badge&labelColor=111" />
   <img alt="licença" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
   <img alt="plataforma" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
 </p>
@@ -52,15 +52,15 @@
 ## Download
 
 - [Baixar a release mais recente](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Versão atual: `1.0.4`
-- Arquivo: `FolderSizeExplorer-1.0.4-win-x64.exe`
+- Versão atual: `1.0.5`
+- Arquivo: `FolderSizeExplorer-1.0.5-win-x64.exe`
 - Plataforma: Windows 10/11 x64
 
 O executável portable é self-contained e não exige instalação separada do .NET.
 
 ## Instalação
 
-1. Baixe `FolderSizeExplorer-1.0.4-win-x64.exe` na página oficial de releases.
+1. Baixe `FolderSizeExplorer-1.0.5-win-x64.exe` na página oficial de releases.
 2. Opcionalmente confira o SHA-256 com o arquivo publicado na release.
 3. Coloque o EXE em uma pasta local e execute.
 
@@ -98,16 +98,14 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - **FTP/FTPS**: navegar, enviar, baixar e transferir local↔remoto  
   (modo Automático tenta FTPS e, se falhar, usa FTP)
 
-## Novidades da 1.0.4
+## Novidades da 1.0.5
 
-- Uma barra compacta agora ajusta ícones, miniaturas, cards e espaçamento das linhas de 50% a 250%, em passos de 5%.
-- Detalhes, Colunas, Grade e Painel duplo mantêm percentuais de zoom independentes.
-- `Ctrl+roda`, eventos de pinça do Precision Touchpad promovidos pelo Windows, `Ctrl++`, `Ctrl+-` e `Ctrl+0` atuam na visualização ativa.
-- Imagens, documentos, vídeos, ícones e miniaturas não são mais espelhados em urdu ou outras interfaces RTL.
-- Modos de lista ampliados carregam ícones de alta resolução do Windows em vez de esticar ícones pequenos.
-- A atualização de miniaturas e a navegação por teclado na Grade agora acompanham o percentual contínuo.
-
-Agradecimento aos usuários do Reddit que relataram a ausência do zoom e os previews espelhados em urdu.
+- Preservação do formato regional de data e hora do Windows (System Locale), independentemente do idioma selecionado para a interface (Issue #1).
+- Exclusão local executada em thread STA dedicada com a API nativa do Shell do Windows, garantindo envio seguro à Lixeira e relatório detalhado por item.
+- Correção de contexto de exclusão em resultados de busca profunda, modo Colunas (Miller columns) e painel duplo.
+- Maior confiabilidade em transferências FTP: opções Pular e Retomar preservam o destino sem exclusão prematura, além de detecção de colisões.
+- Notificações de progresso FTP com taxa controlada e ajuste dinâmico do limite de concorrência no cálculo de tamanho de pastas.
+- Consultas ao cache SQLite movidas para segundo plano e ordenação sequencial estrita de operações.
 
 Veja o [CHANGELOG.md](CHANGELOG.md) para a lista completa.
 
