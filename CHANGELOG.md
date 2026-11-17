@@ -4,6 +4,26 @@ All notable changes to Folder Size Explorer are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project intends to follow Semantic Versioning.
 
+## [1.0.6] - 2026-11-16
+
+### Fixed
+
+- Unified all deletion triggers (toolbar trash button, `Del` key, and context menu) into a single selection-based flow across Details, Columns, Grid, and Dual views.
+- Fixed multi-selection synchronization and preservation in Columns (Miller columns) view and on right-click across all file lists, allowing multiple files and folders to be deleted together.
+- Fixed folder deletion from Columns view by preserving active column selection after subcolumn navigation and stopping `FileWatcherService` when deleting the currently watched directory or an ancestor directory.
+
+### Changed
+
+- Added dark Windows title bar support (`DwmSetWindowAttribute`) for the main window and secondary dialogs when Dark theme is active, updating live on theme toggle.
+- Styled `ScrollBar`, `ScrollViewer` corners, `CheckBox`, `ComboBox`, and `ComboBoxItem` with theme-aware brushes (`DarkTheme` and `LightTheme`) so dialogs and lists match Dark mode cleanly.
+- Applied Theme and Language selections immediately in Settings with automatic revert if canceled.
+- Updated application and status-bar versions to `1.0.6`.
+
+### Validation
+
+- Release and portable single-file (`win-x64`) builds completed successfully.
+- All 350 automated tests pass.
+
 ## [1.0.5] - 2026-11-08
 
 ### Fixed

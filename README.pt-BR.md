@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="versão" src="https://img.shields.io/badge/version-1.0.5-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="versão" src="https://img.shields.io/badge/version-1.0.6-11b3ad?style=for-the-badge&labelColor=111" />
   <img alt="licença" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
   <img alt="plataforma" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
 </p>
@@ -52,15 +52,15 @@
 ## Download
 
 - [Baixar a release mais recente](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Versão atual: `1.0.5`
-- Arquivo: `FolderSizeExplorer-1.0.5-win-x64.exe`
+- Versão atual: `1.0.6`
+- Arquivo: `FolderSizeExplorer-1.0.6-win-x64.exe`
 - Plataforma: Windows 10/11 x64
 
 O executável portable é self-contained e não exige instalação separada do .NET.
 
 ## Instalação
 
-1. Baixe `FolderSizeExplorer-1.0.5-win-x64.exe` na página oficial de releases.
+1. Baixe `FolderSizeExplorer-1.0.6-win-x64.exe` na página oficial de releases.
 2. Opcionalmente confira o SHA-256 com o arquivo publicado na release.
 3. Coloque o EXE em uma pasta local e execute.
 
@@ -98,14 +98,14 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - **FTP/FTPS**: navegar, enviar, baixar e transferir local↔remoto  
   (modo Automático tenta FTPS e, se falhar, usa FTP)
 
-## Novidades da 1.0.5
+## Novidades da 1.0.6
 
-- Preservação do formato regional de data e hora do Windows (System Locale), independentemente do idioma selecionado para a interface (Issue #1).
-- Exclusão local executada em thread STA dedicada com a API nativa do Shell do Windows, garantindo envio seguro à Lixeira e relatório detalhado por item.
-- Correção de contexto de exclusão em resultados de busca profunda, modo Colunas (Miller columns) e painel duplo.
-- Maior confiabilidade em transferências FTP: opções Pular e Retomar preservam o destino sem exclusão prematura, além de detecção de colisões.
-- Notificações de progresso FTP com taxa controlada e ajuste dinâmico do limite de concorrência no cálculo de tamanho de pastas.
-- Consultas ao cache SQLite movidas para segundo plano e ordenação sequencial estrita de operações.
+- Unificação de todos os gatilhos de exclusão (botão da lixeira na barra, tecla `Del` e menu de contexto) em um único fluxo baseado na seleção ativa em Detalhes, Colunas, Grade e Painel duplo.
+- Correção da sincronização de seleção múltipla no modo Colunas (Miller columns) e preservação da seleção ao clicar com o botão direito em qualquer lista.
+- Correção da exclusão de pastas no modo Colunas, mantendo a seleção da coluna após abrir a subcoluna e liberando o monitoramento do `FileWatcherService` antes de enviar pastas para a Lixeira.
+- Barra de título nativa do Windows em modo escuro (`DwmSetWindowAttribute`) na janela principal e nos diálogos, com atualização dinâmica ao alternar de tema.
+- Barras de rolagem (`ScrollBar`), cantos de `ScrollViewer`, `CheckBox`, `ComboBox` e listas suspensas estilizados para os temas Escuro e Claro.
+- Seleção de Tema e Idioma nas Configurações aplicada imediatamente em tempo real, revertendo automaticamente ao cancelar.
 
 Veja o [CHANGELOG.md](CHANGELOG.md) para a lista completa.
 
