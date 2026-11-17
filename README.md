@@ -103,6 +103,7 @@ The application runs as the current user and does not automatically request admi
 - Unified all deletion triggers (toolbar trash button, `Del` key, and context menu) into a single selection-based flow across Details, Columns, Grid, and Dual views.
 - Fixed multi-selection syncing in Columns (Miller columns) view and preserved multi-selection on right-click across all file lists.
 - Fixed folder deletion from Columns view by preserving active column selection after subcolumn navigation and releasing active `FileWatcherService` directory watches before sending local folders to the Recycle Bin.
+- Fixed `Ctrl+X`, `Ctrl+C`, and `Ctrl+V` (plus `ImeProcessed` and `Alt+Arrow` keys) across view modes, post-navigation, empty folders, and active Windows 11 IMEs, with paste targeting the active directory and clipboard retries (Issue #2).
 - Enabled dark Windows title bars (`DwmSetWindowAttribute`) across the main window and dialogs, updating dynamically on theme toggle.
 - Styled `ScrollBar`, `ScrollViewer` corners, `CheckBox`, `ComboBox`, and dropdown lists for Dark and Light themes.
 - Applied Theme and Language changes in Settings immediately in real time, reverting automatically if canceled.

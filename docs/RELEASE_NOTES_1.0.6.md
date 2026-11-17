@@ -11,6 +11,7 @@ Version 1.0.6 unifies deletion behavior for multi-selection and folders across a
 - Unified toolbar trash button, `Del` key, and context-menu Delete into a single selection-based path so multi-selected items are never reduced to a single target.
 - Fixed multi-selection syncing and right-click selection preservation in Columns (Miller columns) view and across all other views.
 - Fixed folder deletion from Columns view by preserving column selection after opening a folder column and releasing active `FileWatcherService` directory watches before sending local folders to the Recycle Bin.
+- Fixed `Ctrl+X`, `Ctrl+C`, and `Ctrl+V` shortcuts (plus `ImeProcessed` and `Alt+Arrow` keys) on Windows 11 after folder navigation, in empty folders, when list focus shifts, or when an IME is active, with paste targeting the active directory and clipboard retry handling (Issue #2).
 - Enabled dark Windows title bars via `DwmSetWindowAttribute` across the main window and dialogs, updating dynamically when toggling between Dark and Light themes.
 - Styled `ScrollBar` tracks/thumbs, `ScrollViewer` corners, `CheckBox`, `ComboBox`, and `ComboBoxItem` for Dark and Light themes so controls and dropdowns match Dark mode.
 - Changing Theme or Language in Settings now applies immediately in real time, reverting automatically if the dialog is canceled.
@@ -24,7 +25,7 @@ Version 1.0.6 unifies deletion behavior for multi-selection and folders across a
 **Executable SHA-256**
 
 ```text
-6f41c83a7e6ae0333921d11fbd138630b57a247f8415d7f90f98e025328c48ae  FolderSizeExplorer-1.0.6-win-x64.exe
+ac99f1cbb774fd038263729f7c7c79bd28780b2e041a5302d9afadeaf0e80ed2  FolderSizeExplorer-1.0.6-win-x64.exe
 ```
 
 ### Update
@@ -41,7 +42,7 @@ Close the previous version and replace the earlier executable in your local fold
 
 - Release and portable single-file (`win-x64`) builds completed successfully.
 - All 350 automated tests pass.
-- File version: `1.0.6.0`; source revision: `079f59f5b48ca119be1dbf5e5968ed172a0710e0`.
+- File version: `1.0.6.0`; source revision: `fd0af5c612101cb3bde8b696dab760f75c18577d`.
 
 ### Resources
 
@@ -64,6 +65,7 @@ A versão 1.0.6 unifica o comportamento de exclusão para seleção múltipla e 
 - Unificação do botão da lixeira na barra de ferramentas, tecla `Del` e opção Excluir do menu de contexto em um único fluxo baseado na seleção ativa, garantindo que múltiplos itens selecionados sejam enviados juntos à Lixeira.
 - Correção da sincronização de seleção múltipla no modo Colunas (Miller columns) e preservação da seleção ao abrir o menu de contexto com o botão direito em todos os modos.
 - Correção da exclusão de pastas no modo Colunas: a seleção da coluna é mantida após abrir a subcoluna da pasta e o `FileWatcherService` libera o monitoramento da pasta alvo (ou subpastas) antes do envio para a Lixeira.
+- Correção dos atalhos `Ctrl+X`, `Ctrl+C` e `Ctrl+V` (além de teclas via IME e `Alt+Setas`) no Windows 11 após navegar entre pastas, em pastas vazias, quando o foco sai da lista ou com IME ativo, garantindo colagem no diretório ativo e retry na área de transferência (Issue #2).
 - Barra superior (título do Windows) em modo escuro via `DwmSetWindowAttribute` na janela principal e nos diálogos, com atualização dinâmica ao alternar entre os temas Escuro e Claro.
 - Barras de rolagem (`ScrollBar`), cantos de `ScrollViewer`, `CheckBox`, `ComboBox` e listas suspensas estilizados com cores dos temas Escuro e Claro, eliminando controles brancos no modo escuro.
 - Seleção de Tema e Idioma nas Configurações aplicada imediatamente em tempo real, revertendo automaticamente caso o usuário cancele a janela.
@@ -77,7 +79,7 @@ A versão 1.0.6 unifica o comportamento de exclusão para seleção múltipla e 
 **SHA-256 do executável**
 
 ```text
-6f41c83a7e6ae0333921d11fbd138630b57a247f8415d7f90f98e025328c48ae  FolderSizeExplorer-1.0.6-win-x64.exe
+ac99f1cbb774fd038263729f7c7c79bd28780b2e041a5302d9afadeaf0e80ed2  FolderSizeExplorer-1.0.6-win-x64.exe
 ```
 
 ### Atualização
@@ -94,7 +96,7 @@ Feche a versão anterior e substitua o executável antigo na sua pasta local. Co
 
 - Os builds Release e portable single-file (`win-x64`) foram concluídos com sucesso.
 - Todos os 350 testes automatizados passam.
-- Versão do arquivo: `1.0.6.0`; revisão fonte: `079f59f5b48ca119be1dbf5e5968ed172a0710e0`.
+- Versão do arquivo: `1.0.6.0`; revisão fonte: `fd0af5c612101cb3bde8b696dab760f75c18577d`.
 
 ### Recursos
 

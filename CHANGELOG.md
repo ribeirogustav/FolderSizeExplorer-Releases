@@ -11,6 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Unified all deletion triggers (toolbar trash button, `Del` key, and context menu) into a single selection-based flow across Details, Columns, Grid, and Dual views.
 - Fixed multi-selection synchronization and preservation in Columns (Miller columns) view and on right-click across all file lists, allowing multiple files and folders to be deleted together.
 - Fixed folder deletion from Columns view by preserving active column selection after subcolumn navigation and stopping `FileWatcherService` when deleting the currently watched directory or an ancestor directory.
+- Fixed `Ctrl+X`, `Ctrl+C`, and `Ctrl+V` (as well as `ImeProcessed` and `Alt+Arrow` keys) not firing after navigation, on empty folders, when file-list focus was lost, or with an active Windows 11 IME, and ensured `Ctrl+V` pastes into the active destination directory (Issue #2).
 
 ### Changed
 

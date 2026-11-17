@@ -103,6 +103,7 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - Unificação de todos os gatilhos de exclusão (botão da lixeira na barra, tecla `Del` e menu de contexto) em um único fluxo baseado na seleção ativa em Detalhes, Colunas, Grade e Painel duplo.
 - Correção da sincronização de seleção múltipla no modo Colunas (Miller columns) e preservação da seleção ao clicar com o botão direito em qualquer lista.
 - Correção da exclusão de pastas no modo Colunas, mantendo a seleção da coluna após abrir a subcoluna e liberando o monitoramento do `FileWatcherService` antes de enviar pastas para a Lixeira.
+- Correção dos atalhos `Ctrl+X`, `Ctrl+C` e `Ctrl+V` (além de teclas via IME e `Alt+Setas`) após navegação, em pastas vazias, sem foco direto na lista ou com IME ativo no Windows 11, colando sempre no diretório ativo (Issue #2).
 - Barra de título nativa do Windows em modo escuro (`DwmSetWindowAttribute`) na janela principal e nos diálogos, com atualização dinâmica ao alternar de tema.
 - Barras de rolagem (`ScrollBar`), cantos de `ScrollViewer`, `CheckBox`, `ComboBox` e listas suspensas estilizados para os temas Escuro e Claro.
 - Seleção de Tema e Idioma nas Configurações aplicada imediatamente em tempo real, revertendo automaticamente ao cancelar.
