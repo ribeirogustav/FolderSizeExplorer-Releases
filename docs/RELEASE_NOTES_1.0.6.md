@@ -18,7 +18,10 @@ Version 1.0.6 unifies deletion behavior for multi-selection and folders across a
 
 ### Download
 
-- Portable executable: `FolderSizeExplorer-1.0.6-win-x64.exe` (`FolderSizeExplorer.exe`, 96.87 MB)
+- Portable executable: `FolderSizeExplorer-1.0.6-win-x64.exe`
+- SHA-256: `FolderSizeExplorer-1.0.6-win-x64.exe.sha256`
+- Package: `FolderSizeExplorer-1.0.6-win-x64.zip`
+- Package SHA-256: `FolderSizeExplorer-1.0.6-win-x64.zip.sha256`
 - Platform: Windows 10/11 x64
 - Runtime: self-contained; no separate .NET installation is required
 
@@ -27,6 +30,8 @@ Version 1.0.6 unifies deletion behavior for multi-selection and folders across a
 ```text
 ac99f1cbb774fd038263729f7c7c79bd28780b2e041a5302d9afadeaf0e80ed2  FolderSizeExplorer-1.0.6-win-x64.exe
 ```
+
+Verify the ZIP with the published `FolderSizeExplorer-1.0.6-win-x64.zip.sha256` sidecar before extracting it.
 
 ### Update
 
@@ -72,7 +77,10 @@ A versão 1.0.6 unifica o comportamento de exclusão para seleção múltipla e 
 
 ### Download
 
-- Executável portable: `FolderSizeExplorer-1.0.6-win-x64.exe` (`FolderSizeExplorer.exe`, 96.87 MB)
+- Executável portable: `FolderSizeExplorer-1.0.6-win-x64.exe`
+- SHA-256: `FolderSizeExplorer-1.0.6-win-x64.exe.sha256`
+- Pacote: `FolderSizeExplorer-1.0.6-win-x64.zip`
+- SHA-256 do pacote: `FolderSizeExplorer-1.0.6-win-x64.zip.sha256`
 - Plataforma: Windows 10/11 x64
 - Runtime: self-contained; não é necessário instalar o .NET separadamente
 
@@ -81,6 +89,8 @@ A versão 1.0.6 unifica o comportamento de exclusão para seleção múltipla e 
 ```text
 ac99f1cbb774fd038263729f7c7c79bd28780b2e041a5302d9afadeaf0e80ed2  FolderSizeExplorer-1.0.6-win-x64.exe
 ```
+
+Confira o ZIP com o arquivo `FolderSizeExplorer-1.0.6-win-x64.zip.sha256` publicado antes de extrair.
 
 ### Atualização
 
