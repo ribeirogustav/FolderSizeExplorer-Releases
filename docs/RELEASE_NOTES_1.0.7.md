@@ -21,20 +21,20 @@ Version 1.0.7 makes `Ctrl+C`, `Ctrl+X`, and `Ctrl+V` keyboard shortcuts work rel
 
 ### Download
 
-- Portable executable: `FolderSizeExplorer-1.0.7-win-x64.exe` (`FolderSizeExplorerDX.exe`)
-- SHA-256: `FolderSizeExplorer-1.0.7-win-x64.exe.sha256`
-- Package: `FolderSizeExplorer-1.0.7-win-x64.zip`
-- Package SHA-256: `FolderSizeExplorer-1.0.7-win-x64.zip.sha256`
+- Portable executable: `FolderSizeExplorerDX-1.0.7-win-x64.exe`
+- SHA-256: `FolderSizeExplorerDX-1.0.7-win-x64.exe.sha256`
+- Package: `FolderSizeExplorerDX-1.0.7-win-x64.zip`
+- Package SHA-256: `FolderSizeExplorerDX-1.0.7-win-x64.zip.sha256`
 - Platform: Windows 10/11 x64
 - Runtime: self-contained; no separate .NET installation is required
 
 **Executable SHA-256**
 
 ```text
-4f75ea454a88f88d5b8b80df6f0f3a93f4d48a37fc4b8f861bfe13ba46defa41  FolderSizeExplorer-1.0.7-win-x64.exe
+812e4317d20a8a7527667e111cbcb893108994a65e1db342853092b643673c85  FolderSizeExplorerDX-1.0.7-win-x64.exe
 ```
 
-Verify the ZIP with the published `FolderSizeExplorer-1.0.7-win-x64.zip.sha256` sidecar before extracting it.
+Verify the ZIP with the published `FolderSizeExplorerDX-1.0.7-win-x64.zip.sha256` sidecar before extracting it.
 
 ### Update
 
@@ -50,7 +50,7 @@ Close the previous version and replace the earlier executable in your local fold
 
 - Release and portable single-file (`win-x64`) builds completed successfully.
 - All 359 automated tests pass.
-- File version: `1.0.7.0`; source revision: `f37483ce59b7884eb23c93673c69244afb580e88`.
+- File version: `1.0.7.0`; source revision: `0705f8f03931a8529fc6bc5155d3b25205931e45`.
 
 ### Resources
 
@@ -83,20 +83,20 @@ A versão 1.0.7 garante o funcionamento completo dos atalhos de teclado `Ctrl+C`
 
 ### Download
 
-- Executável portable: `FolderSizeExplorer-1.0.7-win-x64.exe` (`FolderSizeExplorerDX.exe`)
-- SHA-256: `FolderSizeExplorer-1.0.7-win-x64.exe.sha256`
-- Pacote: `FolderSizeExplorer-1.0.7-win-x64.zip`
-- SHA-256 do pacote: `FolderSizeExplorer-1.0.7-win-x64.zip.sha256`
+- Executável portable: `FolderSizeExplorerDX-1.0.7-win-x64.exe`
+- SHA-256: `FolderSizeExplorerDX-1.0.7-win-x64.exe.sha256`
+- Pacote: `FolderSizeExplorerDX-1.0.7-win-x64.zip`
+- SHA-256 do pacote: `FolderSizeExplorerDX-1.0.7-win-x64.zip.sha256`
 - Plataforma: Windows 10/11 x64
 - Runtime: self-contained; não é necessário instalar o .NET separadamente
 
 **SHA-256 do executável**
 
 ```text
-4f75ea454a88f88d5b8b80df6f0f3a93f4d48a37fc4b8f861bfe13ba46defa41  FolderSizeExplorer-1.0.7-win-x64.exe
+812e4317d20a8a7527667e111cbcb893108994a65e1db342853092b643673c85  FolderSizeExplorerDX-1.0.7-win-x64.exe
 ```
 
-Confira o ZIP com o arquivo `FolderSizeExplorer-1.0.7-win-x64.zip.sha256` publicado antes de extrair.
+Confira o ZIP com o arquivo `FolderSizeExplorerDX-1.0.7-win-x64.zip.sha256` publicado antes de extrair.
 
 ### Atualização
 
@@ -112,7 +112,7 @@ Feche a versão anterior e substitua o executável antigo na sua pasta local. Co
 
 - Os builds Release e portable single-file (`win-x64`) foram concluídos com sucesso.
 - Todos os 359 testes automatizados passam.
-- Versão do arquivo: `1.0.7.0`; revisão fonte: `f37483ce59b7884eb23c93673c69244afb580e88`.
+- Versão do arquivo: `1.0.7.0`; revisão fonte: `0705f8f03931a8529fc6bc5155d3b25205931e45`.
 
 ### Recursos
 

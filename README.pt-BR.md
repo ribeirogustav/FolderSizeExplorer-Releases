@@ -53,14 +53,14 @@
 
 - [Baixar a release mais recente](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
 - Versão atual: `1.0.7` (`FolderSizeExplorerDX`)
-- Arquivo: `FolderSizeExplorer-1.0.7-win-x64.exe` (`FolderSizeExplorerDX-1.0.7-win-x64.exe`)
+- Arquivo: `FolderSizeExplorerDX-1.0.7-win-x64.exe`
 - Plataforma: Windows 10/11 x64
 
 O executável portable é self-contained e não exige instalação separada do .NET.
 
 ## Instalação
 
-1. Baixe `FolderSizeExplorer-1.0.7-win-x64.exe` (ou `FolderSizeExplorerDX-1.0.7-win-x64.exe`) na página oficial de releases.
+1. Baixe `FolderSizeExplorerDX-1.0.7-win-x64.exe` na página oficial de releases.
 2. Opcionalmente confira o SHA-256 com o arquivo publicado na release.
 3. Coloque o EXE em uma pasta local e execute.
 
