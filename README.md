@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/badge/version-1.0.6-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="version" src="https://img.shields.io/badge/version-1.0.7-11b3ad?style=for-the-badge&labelColor=111" />
   <img alt="license" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
   <img alt="platform" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
 </p>
@@ -52,15 +52,15 @@
 ## Download
 
 - [Download the latest release](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Current version: `1.0.6`
-- Asset: `FolderSizeExplorer-1.0.6-win-x64.exe`
+- Current version: `1.0.7` (`FolderSizeExplorerDX`)
+- Asset: `FolderSizeExplorer-1.0.7-win-x64.exe` (`FolderSizeExplorerDX-1.0.7-win-x64.exe`)
 - Target: Windows 10/11 x64
 
 The portable executable is self-contained and does not require a separate .NET installation.
 
 ## Installation
 
-1. Download `FolderSizeExplorer-1.0.6-win-x64.exe` from the official release page.
+1. Download `FolderSizeExplorer-1.0.7-win-x64.exe` (or `FolderSizeExplorerDX-1.0.7-win-x64.exe`) from the official release page.
 2. Optionally verify its SHA-256 checksum against the checksum published with the release.
 3. Move the executable to a local folder and run it.
 
@@ -98,21 +98,19 @@ The application runs as the current user and does not automatically request admi
 - **FTP/FTPS**: browse, upload, download, and local↔remote transfers  
   (Automatic security tries FTPS first, then plain FTP)
 
-## What is new in 1.0.6
+## What is new in 1.0.7
 
-- Unified all deletion triggers (toolbar trash button, `Del` key, and context menu) into a single selection-based flow across Details, Columns, Grid, and Dual views.
-- Fixed multi-selection syncing in Columns (Miller columns) view and preserved multi-selection on right-click across all file lists.
-- Fixed folder deletion from Columns view by preserving active column selection after subcolumn navigation and releasing active `FileWatcherService` directory watches before sending local folders to the Recycle Bin.
-- Fixed `Ctrl+X`, `Ctrl+C`, and `Ctrl+V` (plus `ImeProcessed` and `Alt+Arrow` keys) across view modes, post-navigation, empty folders, and active Windows 11 IMEs, with paste targeting the active directory and clipboard retries (Issue #2).
-- Enabled dark Windows title bars (`DwmSetWindowAttribute`) across the main window and dialogs, updating dynamically on theme toggle.
-- Styled `ScrollBar`, `ScrollViewer` corners, `CheckBox`, `ComboBox`, and dropdown lists for Dark and Light themes.
-- Applied Theme and Language changes in Settings immediately in real time, reverting automatically if canceled.
+- Updated application branding to `FolderSizeExplorerDX` while preserving existing `%AppData%\FolderSizeExplorer` user settings and SQLite cache.
+- Added preview `CommandBindings` for `ApplicationCommands.Cut`, `Copy`, and `Paste` so `DataGrid` cannot hijack `Ctrl+C`, and synchronized `ActiveColumnPane` / Dual pane focus so `Ctrl+C`, `Ctrl+X`, `Ctrl+V`, `Del`, `F2`, `Enter`, and arrow keys work across every folder type and view mode (Issue #2).
+- Made `Ctrl+X` followed by `Ctrl+V` in the same parent folder a safe no-op instead of renaming to `(1)`, added FTP clipboard copy/cut support, and paused `FileWatcherService` when moving watched directories.
+- Restored native `DataGrid` `DG_ScrollViewer` headers and cells in Details view while keeping themed scrollbars, and updated the Size Map (treemap) to follow the active pane with formatted sizes in blocks and tooltips.
+- Replaced destructive collection rebuilds with in-place synchronization and item-instance reuse (`CollectionSyncHelper`) across Details, Grid, Dual, and Columns views to eliminate flicker, icon/selection resets, and right-column click glitches.
 
 See [CHANGELOG.md](CHANGELOG.md) for the full list.
 
 ### Optional Windows+E remap
 
-Windows reserves `Windows+E` for File Explorer, so Folder Size Explorer does not modify that system shortcut. To remap it voluntarily, use Microsoft [PowerToys Keyboard Manager](https://learn.microsoft.com/windows/powertoys/keyboard-manager), map `Windows+E` to **Start App**, and select `FolderSizeExplorer.exe`. PowerToys must remain running for the remap to work.
+Windows reserves `Windows+E` for File Explorer, so FolderSizeExplorerDX does not modify that system shortcut. To remap it voluntarily, use Microsoft [PowerToys Keyboard Manager](https://learn.microsoft.com/windows/powertoys/keyboard-manager), map `Windows+E` to **Start App**, and select `FolderSizeExplorerDX.exe`. PowerToys must remain running for the remap to work.
 
 ## Architecture
 

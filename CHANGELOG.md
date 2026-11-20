@@ -4,6 +4,31 @@ All notable changes to Folder Size Explorer are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project intends to follow Semantic Versioning.
 
+## [1.0.7] - 2026-11-19
+
+### Fixed
+
+- Added preview `CommandBindings` for `ApplicationCommands.Cut`, `Copy`, and `Paste` so `MainDataGrid` cannot hijack `Ctrl+C` while preserving native text editing when a `TextBox` or `PasswordBox` is focused (Issue #2).
+- Tracked the active column pane in Columns view (`ResolveColumnPasteTarget`) and keyboard focus on Dual panes so `Ctrl+V` always pastes into the intended folder (including child columns opened from a single folder selection, files/multi-selection in intermediate columns, or empty column space).
+- Made `Ctrl+X` followed by `Ctrl+V` in the same parent folder a safe no-op instead of renaming the item to `(1)`, while keeping `Ctrl+C` + `Ctrl+V` duplication in the same folder.
+- Paused `FileWatcherService` before moving a folder that matches or contains `CurrentPath` so Windows does not lock the directory handle during `Ctrl+X` / `Ctrl+V`.
+- Added FTP clipboard support (`Ctrl+C` / `Ctrl+X` in FTP folders to `Ctrl+V` in local folders) and clipboard read retries with in-memory `Cut` fallback on Windows 11.
+- Restored native `DataGrid` `DG_ScrollViewer` rendering in Details view by removing the global `ScrollViewer` template override while keeping themed scrollbars.
+- Updated the Size Map (treemap) to track the active pane in Dual and Columns views, display formatted sizes inside blocks and tooltips, and navigate the active Dual pane when clicked.
+- Replaced destructive `ColumnPanes.Clear()` and collection replacements with in-place collection synchronization and item-instance reuse (`CollectionSyncHelper`) across Details, Grid, Dual, and Columns views, reusing loaded icons/thumbnails and calculated folder sizes and suppressing duplicate `FileWatcherService` refreshes during and after file operations to eliminate flicker and selection loss.
+- Preloaded child column items and coalesced width redistribution before WPF render in Columns view, and fixed right-column click navigation (including already-highlighted folders) without layout jump.
+- Fixed keyboard shortcuts (`Ctrl+C`, `Ctrl+X`, `Ctrl+V`, `Del`, `F2`, `Enter`, and arrow keys) across columns and after dialogs/file operations by synchronizing `ActiveColumnPane` selection and adding fallback active-column resolution (`HasActiveSelection` / `ResolveFallbackColumnSelectedItem`).
+
+### Changed
+
+- Renamed application branding to `FolderSizeExplorerDX` (preserving existing `%AppData%\FolderSizeExplorer` user settings and SQLite cache).
+- Updated application and status-bar versions to `1.0.7`.
+
+### Validation
+
+- Release and portable single-file (`win-x64`) builds completed successfully.
+- All 359 automated tests pass.
+
 ## [1.0.6] - 2026-11-16
 
 ### Fixed

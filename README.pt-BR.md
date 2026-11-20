@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="versão" src="https://img.shields.io/badge/version-1.0.6-11b3ad?style=for-the-badge&labelColor=111" />
+  <img alt="versão" src="https://img.shields.io/badge/version-1.0.7-11b3ad?style=for-the-badge&labelColor=111" />
   <img alt="licença" src="https://img.shields.io/badge/license-Freeware-545b61?style=for-the-badge&labelColor=111" />
   <img alt="plataforma" src="https://img.shields.io/badge/Windows%2010%20%7C%2011-555?style=for-the-badge&labelColor=111&label=platform" />
 </p>
@@ -52,15 +52,15 @@
 ## Download
 
 - [Baixar a release mais recente](https://github.com/ribeirogustav/FolderSizeExplorer-Releases/releases/latest)
-- Versão atual: `1.0.6`
-- Arquivo: `FolderSizeExplorer-1.0.6-win-x64.exe`
+- Versão atual: `1.0.7` (`FolderSizeExplorerDX`)
+- Arquivo: `FolderSizeExplorer-1.0.7-win-x64.exe` (`FolderSizeExplorerDX-1.0.7-win-x64.exe`)
 - Plataforma: Windows 10/11 x64
 
 O executável portable é self-contained e não exige instalação separada do .NET.
 
 ## Instalação
 
-1. Baixe `FolderSizeExplorer-1.0.6-win-x64.exe` na página oficial de releases.
+1. Baixe `FolderSizeExplorer-1.0.7-win-x64.exe` (ou `FolderSizeExplorerDX-1.0.7-win-x64.exe`) na página oficial de releases.
 2. Opcionalmente confira o SHA-256 com o arquivo publicado na release.
 3. Coloque o EXE em uma pasta local e execute.
 
@@ -98,21 +98,19 @@ O aplicativo roda como o usuário atual e não pede administrador automaticament
 - **FTP/FTPS**: navegar, enviar, baixar e transferir local↔remoto  
   (modo Automático tenta FTPS e, se falhar, usa FTP)
 
-## Novidades da 1.0.6
+## Novidades da 1.0.7
 
-- Unificação de todos os gatilhos de exclusão (botão da lixeira na barra, tecla `Del` e menu de contexto) em um único fluxo baseado na seleção ativa em Detalhes, Colunas, Grade e Painel duplo.
-- Correção da sincronização de seleção múltipla no modo Colunas (Miller columns) e preservação da seleção ao clicar com o botão direito em qualquer lista.
-- Correção da exclusão de pastas no modo Colunas, mantendo a seleção da coluna após abrir a subcoluna e liberando o monitoramento do `FileWatcherService` antes de enviar pastas para a Lixeira.
-- Correção dos atalhos `Ctrl+X`, `Ctrl+C` e `Ctrl+V` (além de teclas via IME e `Alt+Setas`) após navegação, em pastas vazias, sem foco direto na lista ou com IME ativo no Windows 11, colando sempre no diretório ativo (Issue #2).
-- Barra de título nativa do Windows em modo escuro (`DwmSetWindowAttribute`) na janela principal e nos diálogos, com atualização dinâmica ao alternar de tema.
-- Barras de rolagem (`ScrollBar`), cantos de `ScrollViewer`, `CheckBox`, `ComboBox` e listas suspensas estilizados para os temas Escuro e Claro.
-- Seleção de Tema e Idioma nas Configurações aplicada imediatamente em tempo real, revertendo automaticamente ao cancelar.
+- Identidade visual e nome do aplicativo atualizados para `FolderSizeExplorerDX` (preservando configurações e cache SQLite em `%AppData%\FolderSizeExplorer`).
+- Adicionados `CommandBindings` de pré-visualização para `ApplicationCommands.Cut`, `Copy` e `Paste` (impedindo interceptação do `DataGrid`) e sincronização de `ActiveColumnPane` / foco no Painel Duplo para garantir o funcionamento de `Ctrl+C`, `Ctrl+X`, `Ctrl+V`, `Del`, `F2`, `Enter` e setas em todos os modos e tipos de pasta (Issue #2).
+- `Ctrl+X` + `Ctrl+V` na mesma pasta agora é no-op seguro (sem renomear para `(1)`), adicionado suporte a `Ctrl+C`/`Ctrl+X` em FTP e pausa automática do `FileWatcherService` ao mover diretórios monitorados.
+- Restauração da renderização completa de cabeçalhos e células no Modo Detalhes mantendo scrollbars estilizadas, e atualização do Mapa de Tamanho (treemap) para acompanhar o painel ativo e exibir tamanhos nos blocos e tooltips.
+- Substituição de recriações destrutivas de coleções por sincronização in-place e reaproveitamento de instâncias (`CollectionSyncHelper`) em Detalhes, Grade, Painel Duplo e Colunas, eliminando o piscar (flicker), perda de seleção e falhas ao clicar na coluna da direita.
 
 Veja o [CHANGELOG.md](CHANGELOG.md) para a lista completa.
 
 ### Remapeamento opcional de Windows+E
 
-O Windows reserva `Windows+E` para o Explorador de Arquivos, portanto o Folder Size Explorer não altera esse atalho do sistema. Para remapeá-lo voluntariamente, use o [PowerToys Keyboard Manager](https://learn.microsoft.com/windows/powertoys/keyboard-manager) da Microsoft, associe `Windows+E` à ação **Start App** e selecione `FolderSizeExplorer.exe`. O PowerToys precisa permanecer em execução para o remapeamento funcionar.
+O Windows reserva `Windows+E` para o Explorador de Arquivos, portanto o FolderSizeExplorerDX não altera esse atalho do sistema. Para remapeá-lo voluntariamente, use o [PowerToys Keyboard Manager](https://learn.microsoft.com/windows/powertoys/keyboard-manager) da Microsoft, associe `Windows+E` à ação **Start App** e selecione `FolderSizeExplorerDX.exe`. O PowerToys precisa permanecer em execução para o remapeamento funcionar.
 
 ## Arquitetura
 
