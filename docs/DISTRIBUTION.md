@@ -2,7 +2,7 @@
 
 ## 1. Objetivo
 
-Esta política define como o Folder Size Explorer deve ser versionado, validado, publicado, atualizado e, quando necessário, retirado de circulação.
+Esta política define como o FolderSizeExplorerDX deve ser versionado, validado, publicado, atualizado e, quando necessário, retirado de circulação.
 
 O objetivo é manter o código-fonte privado, oferecer downloads públicos verificáveis e evitar que builds antigos ou não oficiais sejam confundidos com releases da GRCX.
 
@@ -95,14 +95,14 @@ Nenhum processo futuro de atualização deve enviar versão, identificador ou te
 Nome recomendado:
 
 ```text
-FolderSizeExplorer-<versao>-win-x64.zip
-FolderSizeExplorer-<versao>-win-x64.zip.sha256
+FolderSizeExplorerDX-<versao>-win-x64.zip
+FolderSizeExplorerDX-<versao>-win-x64.zip.sha256
 ```
 
 Conteúdo mínimo do ZIP:
 
 ```text
-FolderSizeExplorer.exe
+FolderSizeExplorerDX.exe
 LICENSE
 EULA.md
 PRIVACY.md
@@ -234,7 +234,7 @@ Não reutilizar uma tag ou versão para binário diferente.
 
 Configuração recomendada:
 
-- descrição: `Official releases of Folder Size Explorer for Windows x64`;
+- descrição: `Official releases of FolderSizeExplorerDX for Windows x64`;
 - issues habilitadas para bugs não sensíveis, com vulnerabilidades direcionadas ao e-mail privado;
 - wiki e projects desabilitados se não forem utilizados;
 - README público com downloads e licença proprietária;

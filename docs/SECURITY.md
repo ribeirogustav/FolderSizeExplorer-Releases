@@ -16,7 +16,7 @@ Report vulnerabilities privately to:
 
 `gustavo@grcx.com.br`
 
-Use a subject such as: `[SECURITY] Folder Size Explorer - short summary`.
+Use a subject such as: `[SECURITY] FolderSizeExplorerDX - short summary`.
 
 Do not open a public issue before receiving guidance, especially when credentials, code execution, data loss, or security bypass may be involved.
 
@@ -56,7 +56,7 @@ There is no contractual SLA or bug bounty. Do not perform testing that causes ou
 
 In scope:
 
-- official Folder Size Explorer executables;
+- official FolderSizeExplorerDX executables;
 - code and scripts maintained in the private repository;
 - official build and publication flow;
 - local storage created by the application;

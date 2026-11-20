@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/foldersizeexplorer.svg" width="300" alt="Folder Size Explorer" />
+  <img src="assets/foldersizeexplorer-dx.webp" width="380" alt="FolderSizeExplorerDX" />
 </p>
 
 <p align="center">
@@ -17,15 +17,15 @@
 </p>
 
 <p>
-  Folder Size Explorer is a free and portable file manager for Windows 10 and Windows 11 that shows the actual size of folders directly while you browse. It combines recursive folder-size analysis with everyday file management, Finder-style column navigation, a visual treemap, tabs, bookmarks, multiple view modes, and FTP/FTPS.
+  FolderSizeExplorerDX is a free and portable file manager for Windows 10 and Windows 11 that shows the actual size of folders directly while you browse. It combines recursive folder-size analysis with everyday file management, Finder-style column navigation, a visual treemap, tabs, bookmarks, multiple view modes, and FTP/FTPS.
 </p>
 
 <p>
-  I originally built Folder Size Explorer for myself because I wanted recursive folder-size analysis to feel like a natural part of everyday file browsing, not a separate tool. The goal is a lightweight file manager where finding what is taking up space feels built in instead of bolted on.
+  I originally built FolderSizeExplorerDX for myself because I wanted recursive folder-size analysis to feel like a natural part of everyday file browsing, not a separate tool. The goal is a lightweight file manager where finding what is taking up space feels built in instead of bolted on.
 </p>
 
 <p>
-  Folder Size Explorer is <strong>proprietary freeware</strong>: personal and internal business use is free, with no Pro version, locked features, subscription, or telemetry. This repository is the official public distribution channel; the source code is private.
+  FolderSizeExplorerDX is <strong>proprietary freeware</strong>: personal and internal business use is free, with no Pro version, locked features, subscription, or telemetry. This repository is the official public distribution channel; the source code is private.
 </p>
 
 <p align="center">
@@ -45,7 +45,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/folder-size-explorer-1.0.2.webp" alt="Folder Size Explorer — Columns view with file preview" width="100%"><br>
+  <img src="assets/folder-size-explorer-1.0.2.webp" alt="FolderSizeExplorerDX — Columns view with file preview" width="100%"><br>
   <em>Columns view with file preview on Windows 11.</em>
 </p>
 

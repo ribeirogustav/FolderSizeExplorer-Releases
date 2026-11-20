@@ -1,16 +1,16 @@
 # End User License Agreement (EULA)
 
-**Folder Size Explorer**  
+**FolderSizeExplorerDX**  
 **EULA version:** 1.0  
 **Effective date:** July 23, 2026
 
-This End User License Agreement is entered into between the user and **Gustavo Ribeiro de Carvalho, an individual in Brazil doing business under the GRCX brand**, owner of Folder Size Explorer.
+This End User License Agreement is entered into between the user and **Gustavo Ribeiro de Carvalho, an individual in Brazil doing business under the GRCX brand**, owner of FolderSizeExplorerDX.
 
 These terms accompany the official download channel and the application package. The current version does not show an in-app acceptance screen. By using the application after having access to these terms, the user agrees to the license to the extent permitted by law. If the user does not agree, they must not use the application.
 
 ## 1. Nature of the product
 
-Folder Size Explorer is a Windows desktop application for file browsing, recursive folder-size calculation, disk-usage visualization, local file operations, and optional FTP/FTPS access.
+FolderSizeExplorerDX is a Windows desktop application for file browsing, recursive folder-size calculation, disk-usage visualization, local file operations, and optional FTP/FTPS access.
 
 The application is provided as proprietary freeware. Free use does not mean open source and does not authorize public copying or redistribution, modification, or delivery to third parties. Copies strictly necessary for the authorized use and internal deployment described in section 2 remain permitted.
 

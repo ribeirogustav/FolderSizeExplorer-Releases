@@ -1,8 +1,8 @@
-# Folder Size Explorer
+# FolderSizeExplorerDX
 
-![Folder Size Explorer](https://raw.githubusercontent.com/ribeirogustav/FolderSizeExplorer-Releases/main/assets/folder-size-explorer-1.0.2.webp)
+![FolderSizeExplorerDX](https://raw.githubusercontent.com/ribeirogustav/FolderSizeExplorer-Releases/main/assets/folder-size-explorer-1.0.2.webp)
 
-Folder Size Explorer is a proprietary desktop app for Windows x64 that combines file browsing with recursive folder-size calculation, a Chrome-style bookmark bar, treemap, tabs, multiple view modes, and FTP/FTPS.
+FolderSizeExplorerDX is a proprietary desktop app for Windows x64 that combines file browsing with recursive folder-size calculation, a Chrome-style bookmark bar, treemap, tabs, multiple view modes, and FTP/FTPS.
 
 This document is intended for the public releases repository. Source code is private and is not distributed in that repository.
 

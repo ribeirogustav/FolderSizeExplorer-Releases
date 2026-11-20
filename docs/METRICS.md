@@ -2,7 +2,7 @@
 
 ## 1. Princípio
 
-O Folder Size Explorer adota, na versão atual, uma postura **sem telemetria no aplicativo**.
+O FolderSizeExplorerDX adota, na versão atual, uma postura **sem telemetria no aplicativo**.
 
 O executável não envia eventos, paths, identificadores de dispositivo, crash reports ou informações de uso à GRCX. Relatórios de produto serão agregados. Os canais externos e o feedback voluntário podem, porém, fornecer à GRCX registros de origem identificáveis, como e-mail, usuário GitHub ou dados de pagamento; esse processamento é distinto da telemetria do aplicativo e segue `PRIVACY.md`.
 

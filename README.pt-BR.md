@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/foldersizeexplorer.svg" width="300" alt="Folder Size Explorer" />
+  <img src="assets/foldersizeexplorer-dx.webp" width="380" alt="FolderSizeExplorerDX" />
 </p>
 
 <p align="center">
@@ -17,15 +17,15 @@
 </p>
 
 <p>
-  Folder Size Explorer é um gerenciador de arquivos gratuito e portátil para Windows 10 e Windows 11 que mostra o tamanho real das pastas diretamente enquanto você navega. Ele combina análise recursiva de tamanho com gerenciamento de arquivos, navegação em colunas no estilo Finder, treemap visual, abas, favoritos, vários modos de visualização e FTP/FTPS.
+  FolderSizeExplorerDX é um gerenciador de arquivos gratuito e portátil para Windows 10 e Windows 11 que mostra o tamanho real das pastas diretamente enquanto você navega. Ele combina análise recursiva de tamanho com gerenciamento de arquivos, navegação em colunas no estilo Finder, treemap visual, abas, favoritos, vários modos de visualização e FTP/FTPS.
 </p>
 
 <p>
-  Eu criei o Folder Size Explorer originalmente para uso próprio porque queria que a análise recursiva do tamanho das pastas fizesse parte natural da navegação diária, e não fosse uma ferramenta separada. A ideia é ter um gerenciador leve em que descobrir o que está ocupando espaço seja parte do próprio fluxo de navegação.
+  Eu criei o FolderSizeExplorerDX originalmente para uso próprio porque queria que a análise recursiva do tamanho das pastas fizesse parte natural da navegação diária, e não fosse uma ferramenta separada. A ideia é ter um gerenciador leve em que descobrir o que está ocupando espaço seja parte do próprio fluxo de navegação.
 </p>
 
 <p>
-  Folder Size Explorer é <strong>freeware proprietário</strong>: o uso pessoal e empresarial interno é gratuito, sem versão Pro, recursos bloqueados, assinatura ou telemetria. Este repositório é o canal oficial de distribuição pública; o código-fonte é privado.
+  FolderSizeExplorerDX é <strong>freeware proprietário</strong>: o uso pessoal e empresarial interno é gratuito, sem versão Pro, recursos bloqueados, assinatura ou telemetria. Este repositório é o canal oficial de distribuição pública; o código-fonte é privado.
 </p>
 
 <p align="center">
@@ -45,7 +45,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/folder-size-explorer-1.0.2.webp" alt="Folder Size Explorer — visualização em Colunas com pré-visualização de arquivo" width="100%"><br>
+  <img src="assets/folder-size-explorer-1.0.2.webp" alt="FolderSizeExplorerDX — visualização em Colunas com pré-visualização de arquivo" width="100%"><br>
   <em>Visualização em Colunas com pré-visualização de arquivo no Windows 11.</em>
 </p>
 

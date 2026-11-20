@@ -1,11 +1,11 @@
 # Política de Privacidade
 
-**Folder Size Explorer**  
+**FolderSizeExplorerDX**  
 **Versão:** 1.0  
 **Vigência:** 23 de julho de 2026  
 **Responsável:** Gustavo Ribeiro de Carvalho, pessoa física no Brasil, atuando sob a marca GRCX
 
-Esta política descreve o tratamento de dados realizado pela versão atual do Folder Size Explorer e pelos canais oficiais de contato da GRCX.
+Esta política descreve o tratamento de dados realizado pela versão atual do FolderSizeExplorerDX e pelos canais oficiais de contato da GRCX.
 
 ## 1. Resumo
 
@@ -58,7 +58,7 @@ O SQLite pode criar arquivos auxiliares `-wal` e `-shm`.
 
 Para remover dados gerenciados pelo aplicativo:
 
-1. Feche o Folder Size Explorer.
+1. Feche o FolderSizeExplorerDX.
 2. Exclua `%AppData%\FolderSizeExplorer`.
 3. Exclua `%LocalAppData%\FolderSizeExplorer`.
 4. Exclua separadamente exports criados por você.

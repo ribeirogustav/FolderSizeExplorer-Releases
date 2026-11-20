@@ -4,7 +4,7 @@
 
 | Campo | Informação |
 | --- | --- |
-| Produto | Folder Size Explorer |
+| Produto | FolderSizeExplorerDX |
 | Titular dos direitos autorais | Gustavo Ribeiro de Carvalho, pessoa física no Brasil |
 | Marca de atuação | GRCX |
 | Autor e desenvolvedor principal | Gustavo Ribeiro de Carvalho |
@@ -17,7 +17,7 @@
 
 ## Escopo da titularidade
 
-Gustavo Ribeiro de Carvalho, atuando sob a marca GRCX, declara-se titular dos componentes autorais próprios do Folder Size Explorer, incluindo código-fonte original, binários produzidos a partir desse código e documentação original.
+Gustavo Ribeiro de Carvalho, atuando sob a marca GRCX, declara-se titular dos componentes autorais próprios do FolderSizeExplorerDX, incluindo código-fonte original, binários produzidos a partir desse código e documentação original.
 
 Gustavo Ribeiro de Carvalho é identificado como autor e desenvolvedor principal.
 
@@ -43,7 +43,7 @@ O repositório público de releases não concede acesso ao código-fonte nem aut
 
 ## Uso de marca e ativos
 
-Os nomes **Folder Size Explorer** e **GRCX**, logos, imagens, capturas oficiais, QR codes e identificadores de pagamento não podem ser reutilizados para representar produtos derivados, mirrors, downloads não oficiais ou campanhas de terceiros sem autorização escrita.
+Os nomes **FolderSizeExplorerDX**, **Folder Size Explorer** e **GRCX**, logos, imagens, capturas oficiais, QR codes e identificadores de pagamento não podem ser reutilizados para representar produtos derivados, mirrors, downloads não oficiais ou campanhas de terceiros sem autorização escrita.
 
 ## Licenciamento
 

@@ -46,7 +46,7 @@ Não estão incluídos:
 
 Inclua:
 
-1. versão do Folder Size Explorer;
+1. versão do FolderSizeExplorerDX;
 2. edição e build do Windows;
 3. passos mínimos para reproduzir;
 4. comportamento esperado e observado;
